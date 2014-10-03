@@ -1,3 +1,5 @@
 markdown: kramdown
 highlighter: pygments
 permalink: none
+
+exclude: ['doc']
