@@ -19,7 +19,7 @@ a:hover { color:#fffd48; }
 */
 
 /* HEADER */
-#tabhead{ background:url("../images/bg-header.gif") repeat-x; }
+#tabhead{ background:url("../img/bg-header.gif") repeat-x; }
 #login{ position:absolute;  right:5px; bottom:5px;}
 #logo{ padding-left:1em; }
 /*#search{ position:absolute; left:230px; bottom:5px;}*/
@@ -59,7 +59,7 @@ font-family:"Lucida Grande","Lucida Sans Unicode","bitstream vera sans","trebuch
 /*#content-main * { margin-left:0px; margin-right:2px; }
 #content-main * * { margin-left:0; margin-right:0; }
 */
-.sidebar * { margin-right:15px; }
+.sidebar * { margin-right:1em; }
 .sidebar * * { margin-left:0; margin-right:0; }
 #content-extra { float:left; width:27%; }
 #content-related { float:left; }
@@ -160,7 +160,7 @@ h3 .small { font-size:80%; }
 #subwrap { display: inline-block; }
 
 blockquote {
-    background:url("../images/blockquote.gif") top left no-repeat;
+    background:url("../img/blockquote.gif") top left no-repeat;
     background-color:rgba(20,20,20,0.4);
 /*    font-size:1.7em; 
     color:#787878;
@@ -195,7 +195,7 @@ span.snip {
     -webkit-border-radius:10px;
     border-radius:10px;
 }
-#website{float:left;width:280px;height:200px;padding:10px;
+#website{float:left;height:200px;padding:10px;
     -moz-border-radius-topleft:10px;
     -moz-border-radius-topright:0px;
     -moz-border-radius-bottomleft:0px;
@@ -211,7 +211,7 @@ span.snip {
     border:1px outset #a0b080;
     cursor:pointer;
 }
-#django-home{float:right;width:280px;height:200px;padding:10px;
+#django-home{float:right;height:200px;padding:10px;
     -moz-border-radius-topleft:0px;
     -moz-border-radius-topright:10px;
     -moz-border-radius-bottomleft:40px;
@@ -224,11 +224,10 @@ span.snip {
     border-top-right-radius:10px;
     border-bottom-left-radius:40px;
     border-bottom-right-radius:0px;
-    border-radius:10px;
     border:1px outset #a0b080;
     cursor:pointer;
 }
-#story{float:left;width:280px;height:200px; padding:10px;
+#story{float:left;height:200px; padding:10px;
     -moz-border-radius-topleft:0px;
     -moz-border-radius-topright:40px;
     -moz-border-radius-bottomleft:10px;
@@ -241,11 +240,10 @@ span.snip {
     border-top-right-radius:40px;
     border-bottom-left-radius:10px;
     border-bottom-right-radius:0px;
-    border-radius:10px;
     border:1px outset #a0b080;
     cursor:pointer;
 }
-#programmer{float:right;width:280px;height:200px;padding:10px;
+#programmer{float:right;height:200px;padding:10px;
     -moz-border-radius-topleft:40px;
     -moz-border-radius-topright:0px;
     -moz-border-radius-bottomleft:0px;
