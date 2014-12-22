@@ -1,31 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-cn">
-<head>
-  {% include header.html %}
-</head>
-<body id="homepage" class="default">
-<div id="container">
-    <div id="tabhead">
-        <div id="tabs">
-        <ul>
-        <li><a class="title" href="/blog/story.html">程序员故事会</a>/ </li>
-        <li><a class="title" href="/blog/website.html">简单建站</a>/ </li>
-        <li><a class="title" href="/blog/django.html">Django边用边学</a>/ </li>
-        <li><a class="title" href="/blog/programmer.html">写给程序员</a>/ </li>
-        </ul>
-        </div>
-        <div id="logo">
-        <h1 class="logo-title"><a class="logo" href="/">
-        ~/一个程序员的简化人生$ ls -d */</a>
-        </h1></div>
-    </div>
-     
-    <div id="columnwrap" class="container-fluid">
-    <div class="row">
-    <div id="content-main" class="col-md-8 col-xs-12">
-      {{ content }} 
-    </div>
-    <div id="content-related" class="col-md-4 col-xs-12">
+    <div id="content-related" class="sidebar">
         <div id="search">
 
           <style type="text/css">
@@ -86,12 +59,4 @@
         style="border:none;" frameborder="0"></iframe>
 
     </div>
-  </div>
-    <div id="footer" class="legal"></div>
-</div>
-
-  {% include google_analytics.html %}
-
-</body>
-</html>
 
