@@ -1,5 +1,7 @@
 markdown: kramdown
 highlighter: pygments
-permalink: none
+permalink: /:title/
+
+name: teckoo.com
 
 exclude: ['doc']

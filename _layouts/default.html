@@ -5,88 +5,15 @@
 </head>
 <body id="homepage" class="default">
 <div id="container">
-    <div id="tabhead">
-        <div id="tabs">
-        <ul>
-        <li><a class="title" href="/blog/story.html">程序员故事会</a>/ </li>
-        <li><a class="title" href="/blog/website.html">简单建站</a>/ </li>
-        <li><a class="title" href="/blog/django.html">Django边用边学</a>/ </li>
-        <li><a class="title" href="/blog/programmer.html">写给程序员</a>/ </li>
-        </ul>
-        </div>
-        <div id="logo">
-        <h1 class="logo-title"><a class="logo" href="/">
-        ~/一个程序员的简化人生$ ls -d */</a>
-        </h1></div>
-    </div>
+    {% include top-nav.html %}
      
     <div id="columnwrap" class="container-fluid">
     <div class="row">
     <div id="content-main" class="col-md-8 col-xs-12">
       {{ content }} 
     </div>
-    <div id="content-related" class="col-md-4 col-xs-12 sidebar">
-        <div id="search">
-
-          <style type="text/css">
-          @import url(http://www.google.com/cse/api/branding.css);
-          </style>
-          <div class="cse-branding-right" style="background-color:#000000;color:#333333">
-            <div class="cse-branding-form">
-              <form action="http://teckoo.com/query.html" id="cse-search-box">
-                <div>
-                  <input type="hidden" name="cx" value="partner-pub-9681815890591039:9455036608" />
-                  <input type="hidden" name="cof" value="FORID:10" />
-                  <input type="hidden" name="ie" value="UTF-8" />
-                  <input type="text" name="q" size="18" />
-                  <input type="submit" name="sa" value="&#x641c;&#x7d22;" />
-                </div>
-              </form>
-              <script type="text/javascript" src="http://www.google.com/jsapi"></script>
-              <script type="text/javascript">google.load("elements", "1", {packages: "transliteration"});</script>
-              <script type="text/javascript" src="http://www.google.com/cse/t13n?form=cse-search-box&t13n_langs=en"></script>
-            </div>
-            <div class="cse-branding-logo">
-              <img src="http://www.google.com/images/poweredby_transparent/poweredby_000000.gif" alt="Google" />
-            </div>
-            <div class="cse-branding-text">
-              自定义搜索
-            </div>
-          </div>
-
-        </div>
-        <h1>推荐</h1>
-        <h2><a href="/blog/programmer/books-recommended.html">程序员推荐书目</a></h2>
-        <h2><a href="/blog/programmer/tools-recommended.html">编程推荐装备 </a></h2>
-
-        <a href="http://feeds.feedburner.com/c2teckoo" rel="alternate" type="application/rss+xml"><img src="http://www.feedburner.com/fb/images/pub/feed-icon32x32.png" alt="" style="vertical-align:middle;border:0"/></a>&nbsp;<a href="http://feeds.feedburner.com/c2teckoo" rel="alternate" type="application/rss+xml">RSS订阅</a>
-
-        <form action="http://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open('http://feedburner.google.com/fb/a/mailverify?uri=c2teckoo', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true"><h1>邮件订阅</h1><input type="text" style="width:140px" name="email"/><input type="hidden" value="c2teckoo" name="uri"/><input type="hidden" name="loc" value="en_US"/> <input type="submit" value="订阅" /><p><a href="http://feedburner.google.com" target="_blank">FeedBurner</a>提供功能</p></form>
-
-        <h1><a href="/knowledge/index.html">我的知识库</a></h1>
-        <h2><a href="/knowledge/linux.html">Linux </a></h2>
-        <h2><a href="/knowledge/development.html">Development</a></h2>
-        <h2><a href="/knowledge/web-front.html">Web front-end </a></h2>
-        <h2><a href="/knowledge/backend.html">Back-end </a></h2>
-        <h2><a href="/knowledge/graphics.html">Graphics </a></h2>
-
-        <h1><a href="/blog/index.html">我的博客</a></h1>
-        <h2><a href="/blog/story.html">程序员故事会</a></h2>
-        <h2><a href="/blog/website.html">简单建站</a></h2>
-        <h2><a href="/blog/django.html">Django边用边学</a></h2>
-        <h2><a href="/blog/programmer.html">写给程序员</a></h2>
-
-        <h1>前后文章</h1>
-        <p> <a href='{{page.prev.url}}'>{{page.prev.title|slice:":20"}}</a> </p>
-        <p> <a href='{{page.next.url}}'>{{page.next.title|slice:":20"}}</a> </p>
-
-        <iframe
-        src="http://rcm.amazon.com/e/cm?t=c2-teckoo-content-20&o=1&p=21&l=ur1&category=computers_accesories&banner=0Q1FJ9TBD13SA09DSMR2&f=ifr"
-        width="125" height="125" scrolling="no" border="0" marginwidth="0"
-        style="border:none;" frameborder="0"></iframe>
-
+    {% include sidebar.html %}
     </div>
-  </div>
     <div id="footer" class="legal"></div>
 </div>
 
