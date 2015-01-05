@@ -78,8 +78,8 @@ font-family:"Lucida Grande","Lucida Sans Unicode","bitstream vera sans","trebuch
 
 h1,h2,h3,h4,h5 { /*padding-top:0.5em; padding-bottom:0.2em;*/ font-family:"Trebuchet MS",sans-serif; font-weight:bold;}
 h1 { font-size:115%; color: #60c020; border-bottom: thin dotted; }
-h2 { font-size:110%; color: #50b0f0; border-bottom: thin dotted; margin-left:2em;}
-h3 { color:#f0c050; border-bottom: thin dotted; margin-left:2em;}
+h2 { font-size:110%; color: #50b0f0; border-bottom: thin dotted; margin-left:1em;}
+h3 { color:#f0c050; border-bottom: thin dotted; margin-left:1em;}
 h4 { }
 p, ul, dl { margin-top:0.5em; margin-bottom:0.5em; }
 hr { color:#ccc; background-color:#ccc; height:1px; border:0; }

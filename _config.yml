@@ -1,6 +1,6 @@
 markdown: kramdown
 highlighter: pygments
-permalink: /:title/
+permalink: /:categories/:title/
 
 name: teckoo.com
 
