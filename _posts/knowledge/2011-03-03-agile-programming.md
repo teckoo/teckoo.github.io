@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Agile Programming
-categories: [knowledge, linux]
-tags: [linux, development, agile]
+categories: [knowledge, development]
+tags: [development, agile]
 ---
 
 
