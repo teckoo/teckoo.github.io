@@ -6,7 +6,7 @@ categories: [knowledge, development]
 tags: [development]
 ---
 
-[相关文章](/programmer/version-control-svn-git.html)
+[相关文章](/blog/programmer/version-control-svn-git.html)
 
 ![](/media/content/goodcomments.jpg)
 
