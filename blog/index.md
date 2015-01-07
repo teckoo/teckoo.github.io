@@ -1,9 +1,10 @@
 ---
 layout: post
-title: Knowledge Article Index
+title: All Blog Posts
 ---
+
 <ul>
-{% for post in site.categories['knowledge'] %}
+{% for post in site.categories['blog']%}
     <li><a href="{{ post.url }}">{{ post.title }}</a></li>
 {% endfor %}
 </ul>
