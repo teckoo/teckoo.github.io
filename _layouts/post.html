@@ -1,11 +1,36 @@
----
-layout: default
----
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-cn">
+<head>
+  {% include header.html %}
+</head>
+<body id="homepage" class="default">
+<div id="container">
+    {% include top-nav.html %}
+     
+    <div id="columnwrap" class="container-fluid">
+    <div class="row">
+    <div id="content-main" class="col-sm-8 col-xs-12">
+      <article class="post"> 
+        <h1> {{ page.title }} </h1>
+        <div class="entry"> 
+          {{ content }}
+        </div>
+      </article> 
 
-<article class="post"> 
-  <h1> {{ page.title }} </h1>
+      {% include comment.html %}
 
-  <div class="entry"> 
-    {{ content }}
-  </div>
-</article>
+    </div>
+    <div id="content-related" class="sidebar col-sm-4 col-xs-12">
+      {% include sidebar.html %}
+    </div>
+    </div>
+
+
+    {% include footer.html %}
+</div>
+
+  {% include google_analytics.html %}
+
+</body>
+</html>
+

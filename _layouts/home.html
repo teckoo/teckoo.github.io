@@ -6,8 +6,10 @@
 <body id="homepage" class="default">
 <div id="container" class="set-center big-col">
   <div id="homewrap" class="container-fluid"> 
-    <div id="tabhead">
-        <div id="logo"><h1 class="logo-title"><a href="/">c2@teckoo.com:~/一个程序员的简单人生$ ls -d */</a></h1></div>
+    <div class="row">
+      <div id="tabhead">
+          <div id="logo"><h1 class="logo-title"><a href="/">c2@teckoo.com:~/一个程序员的简单人生$ ls -d */</a></h1></div>
+      </div>
     </div>
 
     <div class="row">
@@ -30,25 +32,24 @@ Learn more to do less</p>
         </div>
     </div>
     <div id="footer" class="legal">
-        <div class="left"> <h2 class="logo-title">更</h2> <h2 class="logo-title">新</h2> </div>
+        <div class="row"> <h1> 最近更新</h1> </div>
         <div >
           {{ content }}
         </div>
-        <div id="kb">
-            <p> 知识库: 
+        <div id="kb" class="row">
+            知识库: 
             <a href="/knowledge/linux.html">Linux </a> | 
             <a href="/knowledge/development.html">Development</a> | 
             <a href="/knowledge/front_end.html">Web front-end </a>|
             <a href="/knowledge/backend.html">Back-end </a> | 
             <a href="/knowledge/graphics.html">Graphics </a>
-            </p>
         </div>
-        <div id="search">
+        <div id="search" class="row" >
 
           <style type="text/css">
           @import url(http://www.google.com/cse/api/branding.css);
           </style>
-          <div class="cse-branding-right" style="background-color:#000000;color:#333333">
+          <div class="cse-branding-right">
             <div class="cse-branding-form">
               <form action="http://teckoo.com/query.html" id="cse-search-box">
                 <div>
@@ -73,6 +74,7 @@ Learn more to do less</p>
 
         </div>
     </div>
+    {% include footer.html %}
     </div>
 </div>
 
