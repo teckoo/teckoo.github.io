@@ -15,14 +15,14 @@
         {% if page.categories %}
         Category: 
         {% for category in page.categories %}
-          /<a href="/category/{{category}}"> {{category}} </a>
+          /<a href="/category/{{category|trim}}.html">{{ category }}</a>
         {% endfor %}
         {% endif %}
         <br/>
         {% if page.tags %}
         Tags:
         {% for tag in page.tags %}
-          <div class="tag"> <a href="/tag/{{tag}}.html"> {{ tag }} </a> </div>
+          <span class="tag"> <a href="/tag/{{tag|trim}}.html">{{ tag }}</a> </span>
         {% endfor %}
         {% endif %}
         <div class="entry"> 
