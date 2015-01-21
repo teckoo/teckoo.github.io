@@ -8,13 +8,14 @@
     {% include top-nav.html %}
      
     <div id="columnwrap" class="container-fluid">
-    <div class="row">
-    <div id="content-main" class="col-md-8 col-xs-12">
-      {{ content }} 
+      <div class="row">
+        <div id="content-main" class="col-md-8 col-xs-12">
+          {{ content }} 
+        </div>
+        {% include sidebar.html %}
+      </div>
+      {% include footer.html %}
     </div>
-    {% include sidebar.html %}
-    </div>
-    {% include footer.html %}
 </div>
 
   {% include google_analytics.html %}
