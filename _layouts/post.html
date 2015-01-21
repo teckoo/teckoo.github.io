@@ -12,6 +12,19 @@
     <div id="content-main" class="col-sm-8 col-xs-12">
       <article class="post"> 
         <h1> {{ page.title }} </h1>
+        {% if page.categories %}
+        Category: 
+        {% for category in page.categories %}
+          /<a href="/category/{{category}}"> {{category}} </a>
+        {% endfor %}
+        {% endif %}
+        <br/>
+        {% if page.tags %}
+        Tags:
+        {% for tag in page.tags %}
+          <div class="tag"> <a href="/tag/{{tag}}.html"> {{ tag }} </a> </div>
+        {% endfor %}
+        {% endif %}
         <div class="entry"> 
           {{ content }}
         </div>

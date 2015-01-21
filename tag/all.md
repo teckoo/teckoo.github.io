@@ -3,7 +3,6 @@ layout: post
 title: All Tags
 ---
 
-
 {% capture tags %}
   {% for tag in site.tags %}
       {{ tag[0] }}
