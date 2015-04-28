@@ -45,4 +45,30 @@ Localization
 The language code list is at <https://developers.google.com/maps/faq#languagesupport>
 
 
+    <script
+            src="http://maps.googleapis.com/maps/api/js?region=gr">
+    </script>
+
+For a list of region codes, visit <http://www.iana.org/assignments/language-subtag-registry/language-subtag-registry>.
+
 [Google Maps Overlays]({% post_url /website/2015-04-21-google-maps-overlays %})
+
+
+Zooming with mouse
+-----------------------
+
+`map.enableKeyDragZoom();` hold one of the control keys (SHIFT, CTRL, ALT) and use mouse to draw a rectangle to zoom to this region. 
+
+[KeyDragZoom Examples](http://google-maps-utility-library-v3.googlecode.com/svn/tags/keydragzoom/2.0/docs/examples.html)
+
+Controls
+-----------------
+
+    var options = {
+        scaleControl: true,
+        panControl: true/false,
+        zoomControl: true,
+        mapTypeControl: true,
+        streetViewControl: true, 
+        overviewMapControl: true,
+    }
