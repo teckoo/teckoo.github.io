@@ -15,20 +15,34 @@ src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Opera
 </iframe>
 </div>
 
+
+Basic skeleton
+===================
+
 create a new Map object
 
     var myMap = new google.maps.Map();
 
+To specify a point in maps:
+
+    myLocation = new google.maps.LatLng($lat, $lng);
+
 set Zoom: `myMap.setZoom(12)`
 
-To sepcify a point in maps: 
+Sample files:
 
-    myLocation = new google.maps.LatLng($lat, $lng); 
+ * [Show a map with event registration](https://github.com/teckoo/HTMLCSS_Javascript_cookbook/blob/master/gis/googlemaps/101-simple-map.html)
+ * [Show a map with onLoad action](https://github.com/teckoo/HTMLCSS_Javascript_cookbook/blob/master/gis/googlemaps/102-map-onLoad.html)
 
-To place a marker: 
 
-    var marker = new google.maps.Marker({
-      position: myLocation,
-      title: 'My Place',
-      map: myMap
-    });
+Localization
+----------------
+
+    <script
+            src="http://maps.googleapis.com/maps/api/js?language=zh-CN">
+    </script>
+
+The language code list is at <https://developers.google.com/maps/faq#languagesupport>
+
+
+[Google Maps Overlays]({% post_url /website/2015-04-21-google-maps-overlays %})
