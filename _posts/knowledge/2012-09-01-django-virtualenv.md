@@ -10,12 +10,15 @@ tags: [django]
 
 Virtualenv
 ==============
+
 Install package
 ----------------
+
     sudo aptitude install python-virtualenv  
 
 Generate an environment
 --------------------------
+
     virtualenv --system-site-packages $site
 
 Install packages
@@ -29,6 +32,7 @@ Install packages
 
 virtualenvwrapper
 ========================
+
 Install package
 
      sudo aptitude install virtualenvwrapper

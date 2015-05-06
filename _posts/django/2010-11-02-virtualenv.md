@@ -50,10 +50,13 @@ Installation
 
 Setup
 ========
+
 创建一个工作环境`mysite`
 --------------------------
+
   # for virtualenv 1.4 (Ubuntu 10.04)
 	virtualenv mysite
+
   # for virtualenv 1.8 and above
 	virtualenv --system-site-packages mysite
 
@@ -71,7 +74,10 @@ virtualenv还在`ENV/bin`里安装了`pip`. 以后再安装新的python包就都
 
 相关工具
 =========
-## alias        
+
+alias        
+------
+
 一开始我觉得virtualenvwrapper没什么用, 基本上是个overkill.
 但是因为alias不支持参数, 我一直用下面这个alias+script, 
 
@@ -99,6 +105,9 @@ in ~/bin/workon
         export WORKON_HOME=~/sites
         # post-install 
         source /usr/local/bin/virtualenvwrapper.sh
+        on Ubuntu 14.04 LTS, the path is 
+        source /usr/share/virtualenvwrapper/virtualenvwrapper.sh
+
         mkvirtualenv env1
         mkvirtualenv env2
 
