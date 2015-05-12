@@ -54,14 +54,14 @@ Setup
 创建一个工作环境`mysite`
 --------------------------
 
-  # for virtualenv 1.4 (Ubuntu 10.04)
-	virtualenv mysite
+    # for virtualenv 1.4 (Ubuntu 10.04)
+    virtualenv mysite
 
-  # for virtualenv 1.8 and above
-	virtualenv --system-site-packages mysite
+    # for virtualenv 1.8 and above
+    virtualenv --system-site-packages mysite
 
-	cd mysite
-	source bin/activate
+    cd mysite
+    source bin/activate
 
 这时你就发现多了一个环境变量`VIRTUAL_ENV`. virtualenv还修改了`$PATH`, 增加了`bin/python`, 这样以后的pythonpath就优先指定到当前目录环境里. 
 virtualenv还在`ENV/bin`里安装了`pip`. 以后再安装新的python包就都装到这下面了, 如`pip install html5lib`. 
