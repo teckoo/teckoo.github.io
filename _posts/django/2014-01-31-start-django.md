@@ -38,6 +38,18 @@ create necessary tables.
 
       ./manage.py shell 
 
+Bash completion
+==================
+
+Download shell script from Django source repo. 
+
+    wget -O ~/.django_bash_completion.sh \
+    https://raw.github.com/django/django/master/extras/django_bash_completion
+
+Add the following line to `.bashrc`. 
+
+    . $HOME/.django_bash_completion.sh
+
 Resource
 =========
 [How to deploy to Heroku](http://www.deploydjango.com/django_project_structure/index.html#step-3-heroku-best-practices)
