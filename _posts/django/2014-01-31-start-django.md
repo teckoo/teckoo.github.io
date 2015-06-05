@@ -38,6 +38,14 @@ create necessary tables.
 
       ./manage.py shell 
 
+如果你已经删除了某个table, 
+
+    manage.py migrate ziputil zero  # the django way
+    # if the table is deleted using other way
+    manage.py migrate ziputil zero --fake  
+    manage.py migrate ziputil 
+
+
 Bash completion
 ==================
 

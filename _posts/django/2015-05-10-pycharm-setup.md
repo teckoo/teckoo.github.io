@@ -17,3 +17,8 @@ Virtualenv
    1. Run broswer: http://127.0.0.1:8000
    2. Environment variables: DJANGO_SETTINGS_MODULE=${your_project}.settings
    3. Working directory: absolute path to your project.
+
+Run manage.py tasks
+----------------------
+
+In main menu, "Tools/Run manage.py tasks" (Ctrl+Alt+R)
