@@ -26,6 +26,7 @@ admin.py
     class NewsAdmin(admin.ModelAdmin):
         list_display=('title', 'publish_at', 'expire_at', 'is_published')
         list_filter =('title', 'publish_at', 'expire_at', 'is_published')
+        search_fields =('title', 'publish_at', 'expire_at', 'is_published')
 
         # user custom form
         form=SomeModelForm
