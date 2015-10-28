@@ -48,6 +48,7 @@ HTML template
 
 Database
 ================
+
 sqlite
 ------------
 很简单, 用`manage.py syncdb`直接生成就行了
