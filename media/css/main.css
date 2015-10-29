@@ -2,7 +2,7 @@
 body { margin: 0px; padding: 0px; background:url("../img/bg-black.gif") #000000; color:#dddddd; }
 body, th, td { font:12pt Arial,Helvetica,sans-serif;
     line-height:1.8em;}
-#container { position:relative; min-width:540px; max-width:100em; }
+#container { position:relative; max-width:100em; }
 #homepage { max-width:100em; }
 
 /* LINKS */
@@ -183,7 +183,6 @@ span.snip {
 }
 .logo-title{border-bottom:none;}
 .set-center{margin-left: auto; margin-right: auto;}
-.big-col{width:700px;}
 .sec-title{text-align:center;font-weight:bold;}
 .middle{
     clear:both;
