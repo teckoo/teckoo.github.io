@@ -14,8 +14,7 @@ tags: [website]
 
 Resources
 ===============
- * [Bootstrap website](http://http://getbootstrap.com/)
- *
- [Wikipedia](http://en.wikipedia.org/wiki/Bootstrap_%28front-end_framework%29)
+ * [Bootstrap website](http://getbootstrap.com/)
+ * [Wikipedia](http://en.wikipedia.org/wiki/Bootstrap_%28front-end_framework%29)
 
 

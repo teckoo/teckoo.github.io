@@ -195,7 +195,34 @@ span.snip {
     -webkit-border-radius:10px;
     border-radius:10px;
 }
-#website{float:left;height:200px;padding:10px;
+.left{
+    float:left; 
+    display:inline-block;
+    margin:20px;
+    width:80px;
+    height:40px;
+}
+
+div.toc{
+    border: 1px outset #ffb;
+    background: #3f3f3f;
+    float:right;
+    font-size:85%;
+    margin:0 0 2em 1em;
+    padding:0.5em 1em;
+    position:relative;
+    z-index:1;
+}
+
+.tag{
+  background-color:#333333;
+  padding: 0 0.5em 0 0.5em;
+  border-radius:0.5em;
+  border: 1px outset #ffb;
+}
+
+@media screen and (min-width: 768px) {
+ #website{float:left;height:200px;padding:10px;
     -moz-border-radius-topleft:10px;
     -moz-border-radius-topright:0px;
     -moz-border-radius-bottomleft:0px;
@@ -260,33 +287,10 @@ span.snip {
     cursor:pointer;
 }
 
-.left{
-    float:left; 
-    display:inline-block;
-    margin:20px;
-    width:80px;
-    height:40px;
+ 
 }
 
-div.toc{
-    border: 1px outset #ffb;
-    background: #3f3f3f;
-    float:right;
-    font-size:85%;
-    margin:0 0 2em 1em;
-    padding:0.5em 1em;
-    position:relative;
-    z-index:1;
-}
-
-.tag{
-  background-color:#333333;
-  padding: 0 0.5em 0 0.5em;
-  border-radius:0.5em;
-  border: 1px outset #ffb;
-}
-
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 767px) {
   #content-main { width: auto; float: none; clear:both; margin-right:0px;}
   #content-related {width: auto; float: none; clear:both;}
 } 
