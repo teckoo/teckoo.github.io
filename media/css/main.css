@@ -221,6 +221,7 @@ div.toc{
 }
 
 @media screen and (min-width: 768px) {
+ #homewrap{ width:90%; }
  #website{float:left;height:200px;padding:10px;
     -moz-border-radius-topleft:10px;
     -moz-border-radius-topright:0px;
@@ -285,7 +286,6 @@ div.toc{
     border:1px outset #a0b080;
     cursor:pointer;
 }
-
  
 }
 
