@@ -6,6 +6,15 @@ categories: [blog, website]
 tags: [website]
 ---
 
+In some scenarios, we need to store shell script console output to a log file.
+In log4j, we can define two appenders, one for ConsoleAppender and the other
+one for FileAppender. In console, we can use FIFO (named pipe) to redirect the
+output to log files. Unfortunately, in `sh/ksh`, we have to do it manually.  
+
+Here is one implementation:
+
+Step 1: define a utility shell function
+
 shell_functions.sh
 
     startLogging(){
@@ -33,6 +42,8 @@ shell_functions.sh
       fi
     }
 
+Step 2: You can put it in a central place for all caller shell scripts. 
+
 in setenv.sh
 
     if [ $VERBOSE -ne 0 ]; then
@@ -43,7 +54,11 @@ in setenv.sh
       startLogging "${RT_SCRIPT_LOGDIR}"
     fi
 
+Step 3: then include both utility script and common 'setenv.sh' in execution
+script.
+
 in a real calling script
+
     BASEDIR=$(cd $(dirname $0); pwd)
 
     # pull in common shell functions
@@ -53,7 +68,5 @@ in a real calling script
     trap "stopLogging" EXIT
 
     . $(dirname "$0"/setenv.sh
-
-
 
 

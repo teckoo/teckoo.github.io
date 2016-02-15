@@ -8,7 +8,7 @@ tags: [development]
 
 SonarQube (previous called Sonar) is an open source code quality management
 plat form. SonarQube supports more than 20 programming languages including
-Java. It internallyu uses Checkstyle & PMD for code quality; we can add more
+Java. It internally uses Checkstyle & PMD for code quality; we can add more
 custom rules as required.
 
 Features
