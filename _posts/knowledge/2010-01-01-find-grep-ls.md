@@ -48,3 +48,20 @@ grep
 
     grep -a -B 50 -A 60 'some string in the file' /dev/sda1 > results.txt
 
+-e PATTERN, --regexp=PATTERN, use PATTERN as the pattern. This can be used to specify multiple search patterns
+
+-v, --invert-match, invert the sense of matching, to select non-match lines
+
+-m NUM, --max-count=NUM, stop reading a file after NUM matching lines
+
+-A NUM, --after-context=NUM, print NUM lines of trailing context after matching lines
+
+Match multiple strings
+-------------------------
+
+This command greps four operations and prints out parameters
+
+    op="create\|retrieve\|select\|add"
+    grep "$op" *webService.log | awk '{print $1, $2, $3, $6}'
+    
+    

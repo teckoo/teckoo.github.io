@@ -37,3 +37,10 @@ Install package
 
      sudo aptitude install virtualenvwrapper
 
+List all virtual env
+
+    workon
+
+Switch to one env, TAB completion is available
+
+    workon some_env
