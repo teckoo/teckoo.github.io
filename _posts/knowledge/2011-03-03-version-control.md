@@ -370,7 +370,8 @@ Compacting, garbage collection
 
 show global variables
 -----------------------
-    git config --global --list
+
+    git config --global --list # list all variables
     git config --global user.name "C2 Programmer"
     git config --global user.email "c2@teckoo.com"
     git config --global color.ui "auto"
