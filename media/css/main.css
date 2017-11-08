@@ -292,4 +292,6 @@ div.toc{
 @media screen and (max-width: 767px) {
   #content-main { width: auto; float: none; clear:both; margin-right:0px;}
   #content-related {width: auto; float: none; clear:both;}
+  .sec-title{text-align:left;font-weight:bold;}
+  p {text-indent:0em;}
 } 
