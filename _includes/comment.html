@@ -1,19 +1,30 @@
+{% if page.comments != 'false' %}
 <h1 id="comment-header">评论</h1>
 <div id="disqus_thread"></div>
-<script type="text/javascript">
-    var disqus_shortname = 'teckoo';
-    var disqus_identifier = '{{page.url}}';
-    var disqus_url = '{{page.url}}';
+<script>
 
-    (function() {
-    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-    dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-})();
+/**
+  *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW
+  TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+  *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT:
+  https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+  this.page.url = {{page.url}}; 
+  this.page.identifier = {{page.url}}; 
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+ var d = document, s = d.createElement('script');
+ s.src = 'https://teckoo.disqus.com/embed.js';
+ s.setAttribute('data-timestamp', +new Date());
+ (d.head || d.body).appendChild(s);
+ })();
 </script>
-<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript=teckoo">comments powered by Disqus.</a></noscript>
-<a href="http://disqus.com" class="dsq-brlink">Comments powered by <span class="logo-disqus">Disqus</span></a>
-
+<noscript>Please enable JavaScript to view the <a
+    href="https://disqus.com/?ref_noscript">comments powered by
+    Disqus.</a></noscript>
+                            
 <h3>提示</h3>
 <ul>
     <li>如果看不到评论部分, 请暂时关掉adblock in Firefox/Chrome</li>
@@ -21,4 +32,4 @@
     (潜台词: 请不要灌水, 谢谢)</li>
 </ul>
 
-
+{% endif %}
