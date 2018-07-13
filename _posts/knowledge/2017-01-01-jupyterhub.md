@@ -79,3 +79,21 @@ sudo systemctl daemon-reload and sudo systemctl <start|stop|status> jupyterhub
 or 
 
 sudo /etc/init.d/jupyterhub <start|stop|restart|status>
+
+
+== Google colab ==
+You can upload Jypyter notebooks, and DATA. 
+
+from command line, type: 
+  
+    jupyter notebook
+    # if it fails to run, try
+    conda install jupyter notebook
+
+## Resources ##
+Kaggle
+Colab Google
+Keras
+
+https://js.tensorflow.org/
+https://playground.tensorflow.org
