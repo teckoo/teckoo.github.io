@@ -8,7 +8,7 @@ tags: [programmer]
 
 工欲善其事，必先利其器。咱已经过了追时髦的时代, 现在只要把最基本的设备搞定就好.
 
- * headphone:
+ * Headphone:
    * <a target="_blank"
      href="https://www.amazon.com/gp/product/B004K09H32/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B004K09H32&linkCode=as2&tag=aws0b2-20&linkId=d008d3cc810f89a93a9d365913288a2c">Audio-Technica
      ATH-ANC23 QuietPoint Active Noise-Cancelling In-Ear Headphones</a><img
@@ -19,8 +19,7 @@ tags: [programmer]
    
    <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0"
    scrolling="no" frameborder="0"
-   src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=qf_sp_asin_til&ad_type=product_link&tracking_id=aws0b2-20&marketplace=amazon&region=US&placement=B004K09H32&asins=B004K09H32&linkId=b37304ea1455034aa01b2edbe8a250f1&show_border=false&link_opens_in_new_window=false&price_color=333333&title_color=0066c0&bg_color=ffffff">
-       </iframe>
+   src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=qf_sp_asin_til&ad_type=product_link&tracking_id=aws0b2-20&marketplace=amazon&region=US&placement=B004K09H32&asins=B004K09H32&linkId=b37304ea1455034aa01b2edbe8a250f1&show_border=false&link_opens_in_new_window=false&price_color=333333&title_color=0066c0&bg_color=ffffff"> </iframe>
 
 
  * Keyboard: 

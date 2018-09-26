@@ -51,12 +51,12 @@ Bash completion
 
 Download shell script from Django source repo. 
 
-    wget -O ~/.django_bash_completion.sh \
+    wget -O ~/bin/django_bash_completion.sh \
     https://raw.github.com/django/django/master/extras/django_bash_completion
 
 Add the following line to `.bashrc`. 
 
-    . $HOME/.django_bash_completion.sh
+    . $HOME/bin/django_bash_completion.sh
 
 Resource
 =========
