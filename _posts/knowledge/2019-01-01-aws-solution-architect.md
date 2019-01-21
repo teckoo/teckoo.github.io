@@ -1,17 +1,17 @@
 ---
 layout: post
-title: "AWS Learning Path"
+title: "AWS Certificate Exam Preparation"
 excerpt: ""
 categories: [programmer, AWS]
 tags: [AWS]
 ---
 
 ## Resources
-* [AWS Whitepapers][]
+* [AWS_Whitepapers][]
 
 ## Study Guide
 * [Cloud Guru suggestion](https://acloud.guru/learn/aws-certification-preparation) Free course
-* Get the book from Amazon: [AWS Certified Solutions Architect Official Study Guide][study guide]. It is also available on Safari
+* Get the book from Amazon: [AWS Certified Solutions Architect Official Study Guide][study_guide]. It is also available on Safari
 
 The path is suitable for both certificate exams and interviews.
 
@@ -87,7 +87,6 @@ http://jayendrapatil.com/aws-dynamodb/
 * Case studies
     * google "aws case studies", on amazon.com too.
 
-[AWS Whitepapers]: https://aws.amazon.com/whitepapers/
-[study guide]: https://www.amazon.com/Certified-Solutions-Architect-Official-Study/dp/1119138558
-
+[AWS_Whitepapers]: https://aws.amazon.com/whitepapers/
+[study_guide]: https://www.amazon.com/Certified-Solutions-Architect-Official-Study/dp/1119138558
 
