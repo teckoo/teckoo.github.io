@@ -3,5 +3,6 @@ highlighter: rouge
 permalink: /:categories/:title.html
 
 name: teckoo.com
+title: teckoo.com
 
 exclude: ['doc']

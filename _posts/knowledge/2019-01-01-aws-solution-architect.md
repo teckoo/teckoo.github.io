@@ -7,7 +7,6 @@ tags: [AWS]
 ---
 
 ## Resources
-* [Notes]({% post_url /knowledge/aws-solution-architect %})
 * [AWS Whitepapers][]
 
 ## Study Guide
