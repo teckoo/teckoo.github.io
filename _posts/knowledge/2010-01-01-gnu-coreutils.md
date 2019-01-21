@@ -38,10 +38,22 @@ Or, install a Perl module `ack-grep`, not `ack`
 grep
 ======
 
+## search patterns in certain extension
+Under Linux, the format is more flexible, e.g. 
+
+    grep your_pattern -r --include="*.py"
+    
+Mac OS is more restricted: 
+1. quote is required in some shells e.g. zsh. 
+2. '-e' and '.' are required 
+
+    grep -e your_pattern -r . --include="*.py"
+
 使用grep恢复被删文件内容
 -------------------------
 
-`sudo rm -rf /*` 大概是最令人兴奋的Linux命令了. 有一回我的一个同事升级新机器, 旧的不要了, 我就建议在旧机器运行一下这个命令. 结果有三个同事都跑来看是什么结果. 呵呵. 
+`sudo rm -rf /*` 大概是最令人兴奋的Linux命令了. 有一回我的一个同事升级新机器, 旧的不要了, 
+我就建议在旧机器运行一下这个命令. 有三个同事都跑来看是什么结果. 呵呵. 
 
 的确`rm`实在是招好多用户不待见, 因为恢复文件实在太难. 
 如果实在有什么重要文件要恢复的话. 可以试一下用grep对物理硬盘进行搜索. 
@@ -64,4 +76,4 @@ This command greps four operations and prints out parameters
     op="create\|retrieve\|select\|add"
     grep "$op" *webService.log | awk '{print $1, $2, $3, $6}'
     
-    
+

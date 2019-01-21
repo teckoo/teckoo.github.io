@@ -82,6 +82,9 @@ commit to repo.
 
     git mv $source $destination
 
+### list conflicted files
+    git diff --name-only --diff-filter=U
+
 ### Undo commits
     git commit -C HEAD -a --amend
     # -C: use the log message from the commit specified, HEAD
@@ -683,4 +686,5 @@ To retrieve a tagged version, update your repository by doing:
 to switch to the branch, or to switch to the trunk:
 
     cvs update -A"
+
 
