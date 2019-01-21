@@ -1,0 +1,56 @@
+{% extends "skeleton/_base.html" %}
+
+{% block html-body %}
+<div id="container" class="set-center">
+    <div id="homewrap">
+    <div id="tabhead">
+        <div id="logo"><h1 class="logo-title"><a href="{{site.url}}">c2@TecKoo.com :~/一个程序员的简化人生$ ls -d */</a></h1></div>
+    </div>
+
+    <div class="layer-holder">
+        <div id="website" onclick="top.location.href = 'blog/website.html'"><div class="sec-title"><a class="title" href="/blog/website.html">简单建站</a></div>
+<p>建网站的基本步骤。如何用尽量少的资源来实现网站所需的功能。
+代码写得越少，出错的可能性就越小。<br/>
+Keyword: Keep it simple
+</p>        
+        </div>
+        <div id="django-home" onclick="top.location.href = 'blog/django.html'"><div class="sec-title"><a class="title" href="/blog/django.html">Django边用边学</a></div> 
+<p>俺平时上班靠Java挣钱吃饭。业余用Django编程自娱自乐。Django的中文学习资料太少，咱来义务宣传推广一把。<br/>
+Learn more to do less</p>        
+        </div>
+    </div>
+    <div id="yin-yang" class="middle"> <a href="blog/programmer/balance.html"><img src="/media/images/yin_yang.png" /></a></div>
+    <div class="layer-holder">
+        <div id="story" onclick="top.location.href = 'blog/story.html'"><div class="sec-title"><a class="title" href="/blog/story.html">程序员故事会</a></div> 
+<p>讲讲发生在程序员中的笑话和小故事，轻松话题，娱乐八卦一下(不含负面新闻)。</p></div>
+        <div id="programmer" onclick="top.location.href = 'blog/programmer.html'"><div class="sec-title"><a class="title" href="/blog/programmer.html"> 写给程序员</a></div>
+<p>凡不属于第1、2、3象限的话题，就码这儿得了。来点儿杂谈，也有自己的小抄。</p> 
+        </div>
+    </div>
+    <div id="footer" class="legal">
+        <div class="left"> <h2 class="logo-title">更</h2> <h2 class="logo-title">新</h2> </div>
+        <div>
+        {%recent_posts recents 3 %}
+        <ul>
+        {%for post in recents %}
+        <li>
+        <a href='.{{post.url}}'>{{post.title}}</a> {{ post.created|date:"Y-m-j"}}
+        </li>
+        {%endfor%}
+        </ul>
+        </div>
+        <div id="kb">
+            <p> 知识库: 
+            <a href="/knowledge/linux.html">Linux </a> | 
+            <a href="/knowledge/development.html">Development</a> | 
+            <a href="/knowledge/web-front.html">Web front-end </a> | 
+            <a href="/knowledge/backend.html">Back-end </a> | 
+            <a href="/knowledge/graphics.html">Graphics </a>
+            </p>
+        </div>
+    </div>
+    </div>
+</div>
+
+{% endblock %}
+

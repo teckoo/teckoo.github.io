@@ -1,0 +1,142 @@
+{% extends "skeleton/_root.html" %}
+{% block all %}<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-cn">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="verify-v1" content="iuB9iLrDoi0udZ7i5l4grXw0M0S2CPrMK+ZjOi5DUB4=" />
+    <meta http-equiv="Refresh" content="86400">
+    <!-- viewport meta to reset iPhone inital scale -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--[if lt IE 9]>
+      <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <![endif]-->
+    <title>{% block head_title %}{% endblock %} {{ page.title|safe }} - {{ site.name }}{% block extra_title %}{% endblock %}</title>
+    <!--[if IE]><style>
+        div { zoom: 1; /* trigger hasLayout */ }
+    </style><![endif]-->
+    <link rel="stylesheet" href="/media/css/main.css" /> 
+    {% block feeds %}
+            <link href="http://feeds.feedburner.com/c2teckoo"
+                  rel="alternate" title="{{ site.name }}"
+                  type="application/atom+xml" />
+    {% endblock %}
+
+    {% block extra_css %}{% endblock %}
+    {% block head %}{% endblock %}
+</head>
+<body id="homepage" class="default">
+{% block html-body %} 
+<div id="container">
+    <div id="tabhead">
+        <div id="tabs">{% block tabs %}
+        <ul>
+        <li><a class="title" href="/blog/story.html">程序员故事会</a>/ </li>
+        <li><a class="title" href="/blog/website.html">简单建站</a>/ </li>
+        <li><a class="title" href="/blog/django.html">Django边用边学</a>/ </li>
+        <li><a class="title" href="/blog/programmer.html">写给程序员</a>/ </li>
+        </ul>
+        {% endblock %}</div>
+        <div id="logo">{% block logo_link_image %}
+        <h1 class="logo-title"><a class="logo" href="/">
+        {{ site.name }} :~/一个程序员的简化人生$ ls -d */</a>
+        </h1>{% endblock %}</div>
+    </div>
+     
+    <div id="columnwrap">
+    <div id="content-main">
+        {% with page.node.ancestors|last as parent_node %}
+            {% with parent_node.url as parent_url %}
+                {% block content %}{% endblock %}   
+            {% endwith %}
+        {% endwith %}
+    </div>
+    </div>
+    <div id="content-related" class="sidebar">
+        <div id="search">{% block search %}
+
+          <style type="text/css">
+          @import url(http://www.google.com/cse/api/branding.css);
+          </style>
+          <div class="cse-branding-right" style="background-color:#000000;color:#FFFFFF">
+            <div class="cse-branding-form">
+              <form action="http://teckoo.com/query.html" id="cse-search-box">
+                <div>
+                  <input type="hidden" name="cx" value="partner-pub-9681815890591039:9455036608" />
+                  <input type="hidden" name="cof" value="FORID:10" />
+                  <input type="hidden" name="ie" value="UTF-8" />
+                  <input type="text" name="q" size="18" />
+                  <input type="submit" name="sa" value="&#x641c;&#x7d22;" />
+                </div>
+              </form>
+              <script type="text/javascript" src="http://www.google.com/jsapi"></script>
+              <script type="text/javascript">google.load("elements", "1", {packages: "transliteration"});</script>
+              <script type="text/javascript" src="http://www.google.com/cse/t13n?form=cse-search-box&t13n_langs=en"></script>
+            </div>
+            <div class="cse-branding-logo">
+              <img src="http://www.google.com/images/poweredby_transparent/poweredby_000000.gif" alt="Google" />
+            </div>
+            <div class="cse-branding-text">
+              自定义搜索
+            </div>
+          </div>
+
+        {% endblock %}</div>
+        {% block related_column %}
+        <h1>推荐</h1>
+        <h2><a href="/blog/programmer/books-recommended.html">程序员推荐书目</a></h2>
+        <h2><a href="/blog/programmer/tools-recommended.html">编程推荐装备 </a></h2>
+
+        <a href="http://feeds.feedburner.com/c2teckoo" rel="alternate" type="application/rss+xml"><img src="http://www.feedburner.com/fb/images/pub/feed-icon32x32.png" alt="" style="vertical-align:middle;border:0"/></a>&nbsp;<a href="http://feeds.feedburner.com/c2teckoo" rel="alternate" type="application/rss+xml">RSS订阅</a>
+
+        <form action="http://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open('http://feedburner.google.com/fb/a/mailverify?uri=c2teckoo', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true"><h1>邮件订阅</h1><input type="text" style="width:140px" name="email"/><input type="hidden" value="c2teckoo" name="uri"/><input type="hidden" name="loc" value="en_US"/> <input type="submit" value="订阅" /><p><a href="http://feedburner.google.com" target="_blank">FeedBurner</a>提供功能</p></form>
+
+        <h1><a href="/knowledge/index.html">我的知识库</a></h1>
+        <h2><a href="/knowledge/linux.html">Linux </a></h2>
+        <h2><a href="/knowledge/development.html">Development</a></h2>
+        <h2><a href="/knowledge/web-front.html">Web front-end </a></h2>
+        <h2><a href="/knowledge/backend.html">Back-end </a></h2>
+        <h2><a href="/knowledge/graphics.html">Graphics </a></h2>
+
+        <h1><a href="/blog/index.html">我的博客</a></h1>
+        <h2><a href="/blog/story.html">程序员故事会</a></h2>
+        <h2><a href="/blog/website.html">简单建站</a></h2>
+        <h2><a href="/blog/django.html">Django边用边学</a></h2>
+        <h2><a href="/blog/programmer.html">写给程序员</a></h2>
+
+        <h1>前后文章</h1>
+        <p> <a href='{{page.prev.url}}'>{{page.prev.title|slice:":20"}}</a> </p>
+        <p> <a href='{{page.next.url}}'>{{page.next.title|slice:":20"}}</a> </p>
+
+        {# amazon banners #}
+        <iframe
+        src="http://rcm.amazon.com/e/cm?t=c2-teckoo-content-20&o=1&p=21&l=ur1&category=computers_accesories&banner=0Q1FJ9TBD13SA09DSMR2&f=ifr"
+        width="125" height="125" scrolling="no" border="0" marginwidth="0"
+        style="border:none;" frameborder="0"></iframe>
+
+        {% block related_extra%} {% endblock %}
+        {% endblock %}    
+    </div>
+    <div id="footer" class="legal">{% block footer %}{% endblock %}</div>
+    {% block extra_body %}{% endblock %}
+</div>
+{% endblock %}
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-39143548-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</body>
+</html>
+{% endblock all %}
+

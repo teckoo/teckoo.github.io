@@ -1,0 +1,95 @@
+小猪创业
+------------
+    小猪读了<一只特立独行的猪>以后深受鼓励, 决定创业.     
+    我要当一个super piggy! (画一个super man with pig head.)
+    看了漫画"一条狗说在网上没人知道你是条狗", 于是做网站. 
+
+猪顿三定律
+------------
+    画一个教室里教师在白板上写下这三个定律:
+            
+        1. 用Apple的产品, 会被Apple宰 
+        2. 山寨Apple的产品, 会被Apple宰
+        3. 猪养肥了会被宰 
+
+小猪学编程
+--------------
+    编程这活儿太难了.　(mastering web in 24 hours, for dummies, idiot's guide)
+    我将来出个系列就叫"猪都能学会"
+
+小猪找外包
+-------------
+    小猪拿着地图找'RentAcoder', 碰上狐狸,　
+    狐狸问"大哥你干啥?"　"找外包"
+    "找谁家啊"　"听说我在美国的亲戚上印度程序员便宜"
+    "哪能啊,　别听他们忽悠,　俺们这疙瘩更便宜,　包你满意"
+    "真的,　那你们有什么优势啊"
+    "我们上头有人",　"President Who"
+    "我们家国内媒体有人",　"Sohu"
+    "我们家国外媒体也有人",　"Foxnews"
+    "我们家技术上也有人"　"Firefox"
+    "其实我们家还有个潜伏下来的大拿,　对外代号是Tomcat"
+    "我们还有co-founder", Wolf. 
+    "你们什么来历"?
+    "国内最大三家门户是什么?"　"新浪/网易/搜狐",　
+    "最大在搜索引擎是什么?"　"百度"
+    "对,　我们在一起就是　--　白狐一狼"
+
+小猪给网站起名字
+-----------------
+    狐狸问它想起个什么名字, "不知道, 叫ＰＩＧ行不,　挺象ＩＢＭ的"
+    "不好,　那不时髦",　
+    科技公司名字里要有重复的字母
+    microsoft
+    dell
+    apple
+    facebook
+    amazon
+    twitter
+    google
+
+    公式:   #(letter)/#total
+
+    最终结果是"iZhuZhu". 
+
+小猪起名字
+------------
+    小猪想给自己起个网名. 你看人家别的动物都找到地方了, 象什么Firefox/Python/MySQL/PostgreSQL. 连个被啃了一口的烂苹果都成了个商标. 
+    找呀找, 终于给自己起了个名字叫"安猪"--Android. 
+    狐狸说您这线条也太差了吧,　没关系,　咱带个面具就行了.　
+    于是画个直线条的机器人充数
+    远期计划
+        3.3 添上猪尾巴
+        6.0　显出肚子上线条
+        Wiista　换成猪头
+        7　修正头部上的错误
+        8　支持touch功能
+
+小猪画漫画
+------------
+    一个Nokia普通手机坐在椅子上, 小猪坐在画板后面给Nokia画肖像. 
+    小猪说: 咱会修片, 包您满意. 
+    画板上是一个iphone的图像. 
+
+比作家更流氓的是谁
+--------------------
+    十几年前王朔说过"全北京的流氓都当作家了"
+    到了现在的更新版本应该是"如今的流氓都去做网站了", 
+    而且越流氓做得越大. 
+    前一阵有百度抄袭作家
+    作家抄人家的作品还知道不好意思, 没的可狡辩.
+    做网站的照搬别人的东西, 还说我们做的是平台.
+    不要脸啊. 
+    这两天有新浪抄袭谷奥网站上的文章, 然后还大骂人家. 
+    一个上市公司欺负一个两个人的网站, 
+    不要脸啊. 
+    其实新浪抄人家文章已经有很悠久的传统了. 我记得的一例是它抄<世界日报>的文章然后作者改成"海外文章". 这根本就是这几家公司的问题, 不要推到底下的程序员和记者头上.  
+
+
+Spider's Blog for programmers
+-------------------------------
+ * I like internet, because I am good at weaving webs (the whole world is a web)
+ * I don't like twitter. Birds and bugs can not be buddies. 
+ * I do have some friends: robots. People call us crawlers.
+ * protest: whenever I crawl a website, the server always feeds me sth called 'robots.txt'. No fair, I am a living thing. 
+ * spiders are not insects. Programmers hate bugs, but they don't kill spiders.
