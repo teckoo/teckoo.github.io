@@ -21,3 +21,8 @@ When browsing code, you need to jump around code quickly.
 1. In setting 'Change font size', enable `'Ctrl/Cmd+MouseWheel'`. 
     This is useful when you are in 'Distract free' mode to focus on one or two files.
 
+# Layout
+The closest I've to this setting is 
+"Window->store current layout as default".
+"Edit->Quick Switch Scheme" seems like the sort of place you would define multiple variations.
+

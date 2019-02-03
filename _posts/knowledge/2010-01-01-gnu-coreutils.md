@@ -5,11 +5,9 @@ categories: [knowledge, linux]
 tags: [linux]
 ---
 
-find
-=====
+## find
 
-find and zip files
---------------------
+### find and zip files
 
 To zip log files older than 5 days
 
@@ -35,10 +33,9 @@ Or, install a Perl module `ack-grep`, not `ack`
 
     sudo aptitude install ack-grep
 
-grep
-======
+## grep
 
-## search patterns in certain extension
+### search patterns in certain extension
 Under Linux, the format is more flexible, e.g. 
 
     grep your_pattern -r --include="*.py"
@@ -49,8 +46,7 @@ Mac OS is more restricted:
 
     grep -e your_pattern -r . --include="*.py"
 
-使用grep恢复被删文件内容
--------------------------
+### 使用grep恢复被删文件内容
 
 `sudo rm -rf /*` 大概是最令人兴奋的Linux命令了. 有一回我的一个同事升级新机器, 旧的不要了, 
 我就建议在旧机器运行一下这个命令. 有三个同事都跑来看是什么结果. 呵呵. 
@@ -76,4 +72,14 @@ This command greps four operations and prints out parameters
     op="create\|retrieve\|select\|add"
     grep "$op" *webService.log | awk '{print $1, $2, $3, $6}'
     
+## cut
+
+### split only once to get the left/right value
+Q: S3 bucket/key format is 'bucket_name/path/to/fn', we need to remove the bucket name and retrieve the key value.
+A: require no leading '/' in the string, in shell, 
+
+    value=bucket_name/path/to/fn
+    key=`echo $value | cut -d'/' -f 2-`
+    echo $key
+    $ expect $key to be 'path/to/fn'
 
