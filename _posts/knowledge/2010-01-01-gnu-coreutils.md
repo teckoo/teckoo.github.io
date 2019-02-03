@@ -64,6 +64,8 @@ Mac OS is more restricted:
 
 -A NUM, --after-context=NUM, print NUM lines of trailing context after matching lines
 
+-o, match words only
+
 Match multiple strings
 -------------------------
 
