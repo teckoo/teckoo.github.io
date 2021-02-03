@@ -85,4 +85,4 @@ You need to understand many core cocepts: such as IAM, VPC, S3, EC2, RDS, Dynamo
 
 [AWS Whitepapers]: https://aws.amazon.com/whitepapers/
 [study guide]: https://www.amazon.com/Certified-Solutions-Architect-Official-Study/dp/1119138558
-
+[Blog]: http://jayendrapatil.com/aws-solutions-architect-associate-feb-2018-exam-learning-path/
