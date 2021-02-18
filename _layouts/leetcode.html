@@ -82,7 +82,7 @@
           return [];
         }
         var intersect = tags[tag_list[0]];
-        if (tag_list.length > 1) {
+        if (intersect && tag_list.length > 1) {
           for (var i = 1; i < tag_list.length; i++) {
             if (tags[tag_list[i]]){
               intersect = intersect.filter((x) => tags[tag_list[i]].includes(x));
@@ -91,6 +91,8 @@
               break;
             }
           }
+        } else if (!intersect) {
+          intersect = [];
         }
         var res = [];
         if (intersect && intersect.length > 0) {
