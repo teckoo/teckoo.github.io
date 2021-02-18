@@ -1,0 +1,207 @@
+<html>
+  <head>
+  <!--
+-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <style>
+      label {
+        margin-bottom: 0rem;
+      }
+
+      body {
+        font-family: sans-serif;
+      }
+
+      .tag-layer {
+      }
+      .tag-layer::after {content: ""; clear: both; display: table;}
+
+      #tag-button {
+        margin: 4px;
+        background-color: #efefef;
+        border-radius: 4px;
+        border: 1px solid #d0d0d0;
+        overflow: auto;
+        float: left;
+      }
+
+      #tag-button label {
+        float: left;
+      }
+
+      #tag-button label span {
+        text-align: center;
+        padding: 0px 5px;
+        display: block;
+      }
+
+      #tag-button label input {
+        position: absolute;
+        top: -20px;
+      }
+
+      #tag-button input:checked + span {
+        background-color: rgb(11, 117, 29);
+        color: #fff;
+      }
+    </style>
+  </head>
+
+  <body>
+    <script src="./media/js/tag-search-data.js" ></script>
+    <script>
+      var tags = {};
+      var keywords = {};
+      for (let i in problems) {
+        let p = problems[i];
+        p["tags"].forEach(function (t) {
+          if (t in tags) {
+            tags[t].push(i);
+          } else {
+            tags[t] = [i];
+          }
+        });
+        p["keywords"].forEach(function (t) {
+          if (t in keywords) {
+            keywords[t].push(i);
+          } else {
+            keywords[t] = [i];
+          }
+        });
+      }
+      /* result: {tag:[problem list],}
+    var tags ={
+      "array": [1, 2, 3],
+      "string": [2, 3, 4],
+      "tree": [3, 4, 5],
+    };
+    */
+
+      function filter_tag(tags, tag_list) {
+        /*  intput: tag list, e.g. ["array", "strings"]
+        output: problem object list, e.g. [obj("1"), obj("3")]
+      */
+        if (tag_list.isNaN || tag_list.length == 0) {
+          return [];
+        }
+        var intersect = tags[tag_list[0]];
+        if (tag_list.length > 1) {
+          for (var i = 1; i < tag_list.length; i++) {
+            intersect = intersect.filter((x) => tags[tag_list[i]].includes(x));
+          }
+        }
+        var res = [];
+        if (intersect && intersect.length > 0) {
+          intersect.forEach((x) => res.push(problems[x]));
+        }
+        return res;
+      }
+
+      function format_list(node_name, problem_list) {
+        parent = document.getElementById(node_name);
+        parent.innerHTML = "";
+        ul = document.createElement("ul");
+        ul.setAttribute("class", "list-group");
+        parent.appendChild(ul);
+        problem_list.forEach(function (i) {
+          let li = document.createElement("li");
+          li.setAttribute("class", "list-group-item");
+          ul.appendChild(li);
+          li.innerHTML = `<a href=${i["url"]}>${i["name"]}</a>: ${i["notes"]}`;
+        });
+      }
+
+      function get_select_list(name) {
+        var checkboxes = document.getElementsByName(name);
+        var result = [];
+        for (var i = 0; i < checkboxes.length; i++) {
+          if (checkboxes[i].checked) {
+            result.push(checkboxes[i].value);
+          }
+        }
+        return result;
+      }
+
+      function tag_click() {
+        var tags_checked = get_select_list("tags");
+
+        // update keywords
+        var problems = filter_tag(tags, tags_checked);
+        update_kw(problems);
+        format_list("search_result", problems);
+      }
+
+      function update_kw(problems) {
+        var res = new Set();
+        problems.forEach(function (x) {
+          x["keywords"].forEach((i) => res.add(i));
+        });
+        var kw_select = document.getElementById("kw_options");
+        kw_select.innerHTML = "";
+        for (let i of res) {
+          console.log(`keyword options: ${i}`);
+          btn = document.createElement("div");
+          btn.setAttribute("id", "tag-button");
+          kw_select.appendChild(btn);
+          btn.innerHTML = `
+          <label><input type="checkbox" id="${i}" name="kw" value="${i}"
+            onclick="kw_click()" /><span>${i}</span></label>
+          `;
+        }
+      }
+      function kw_click() {
+        var kw_checked = get_select_list("kw");
+        var kw_result = filter_tag(keywords, kw_checked);
+        var tag_checked = get_select_list("tags");
+        var tag_result = filter_tag(tags, tag_checked);
+        var result = tag_result;
+        if (kw_checked.length > 0) {
+          result = kw_result.filter((a) => tag_result.includes(a));
+          /*
+          result = kw_result.filter(a => tag_result.some(b =>
+            a["name"] === b["name"])
+          );
+          */
+        }
+        format_list("search_result", result);
+      }
+    </script>
+    <pre>
+    TODO list:
+    * search further
+      - company tags (fold)
+      - 'Exclude' tags (fold)  
+    * List keywords related to problems
+    </pre>
+
+    <hr />
+    <form>
+      <div class="tag-layer">
+        <div id="tag-button"><label><input type="checkbox" name="tags" value="array" onclick="tag_click()"/><span>Array</span></label></div>
+        <div id="tag-button"><label><input type="checkbox" name="tags" value="bit" onclick="tag_click()"/><span>Bitwise</span></label></div>
+        <div id="tag-button"><label><input type="checkbox" name="tags" value="queue_stack" onclick="tag_click()"/><span>Queue Stack</span></label></div>
+        <div id="tag-button"><label><input type="checkbox" name="tags" value="heap" onclick="tag_click()"/><span>Heap</span></label></div>
+        <div id="tag-button"><label><input type="checkbox" name="tags" value="linkedlist" onclick="tag_click()"/><span>Linked List</span></label></div>
+        <div id="tag-button"><label><input type="checkbox" name="tags" value="binary_search" onclick="tag_click()"/><span>Binary Search</span></label></div>
+        <div id="tag-button"><label><input type="checkbox" name="tags" value="sort" onclick="tag_click()"/><span>Sort</span></label></div>
+        <div id="tag-button"><label><input type="checkbox" name="tags" value="graph" onclick="tag_click()"/><span>Graph</span></label></div>
+        <div id="tag-button"><label><input type="checkbox" name="tags" value="hashmap" onclick="tag_click()"/><span>Hashmap</span></label></div>
+        <div id="tag-button"><label><input type="checkbox" name="tags" value="backtrack" onclick="tag_click()"/><span>Backtrack</span></label></div>
+        <div id="tag-button"><label><input type="checkbox" name="tags" value="dfs" onclick="tag_click()"/><span>DFS</span></label></div>
+        <div id="tag-button"><label><input type="checkbox" name="tags" value="bfs" onclick="tag_click()"/><span>BFS</span></label></div>
+        <div id="tag-button"><label><input type="checkbox" name="tags" value="trie" onclick="tag_click()"/><span>Trie</span></label></div>
+        <div id="tag-button"><label><input type="checkbox" name="tags" value="tree" onclick="tag_click()"/><span>Tree</span></label></div>
+        <div id="tag-button"><label><input type="checkbox" name="tags" value="two_pointers" onclick="tag_click()"/><span>Two Pointers</span></label></div>
+        <div id="tag-button"><label><input type="checkbox" name="tags" value="fast_slow_pointers" onclick="tag_click()"/><span>Fast Slow Pointers</span></label></div>
+        <div id="tag-button"><label><input type="checkbox" name="tags" value="sliding_window" onclick="tag_click()"/><span>Sliding Window</span></label></div>
+        <div id="tag-button"><label><input type="checkbox" name="tags" value="prefix_sum" onclick="tag_click()"/><span>Prefix Sum</span></label></div>
+      </div>
+      <hr/>
+      <div class="tag-layer">
+        <div id="kw_options"></div>
+      </div>
+      <div id="search_result"></div>
+    </form>
+  </body>
+</html>
+
