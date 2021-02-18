@@ -45,7 +45,7 @@
   </head>
 
   <body>
-    <script src="./media/js/tag-search-data.js" ></script>
+    <script src="/media/js/tag-search-data.js" ></script>
     <script>
       var tags = {};
       var keywords = {};
@@ -84,7 +84,12 @@
         var intersect = tags[tag_list[0]];
         if (tag_list.length > 1) {
           for (var i = 1; i < tag_list.length; i++) {
-            intersect = intersect.filter((x) => tags[tag_list[i]].includes(x));
+            if (tags[tag_list[i]]){
+              intersect = intersect.filter((x) => tags[tag_list[i]].includes(x));
+            } else {
+              intersect = [];
+              break;
+            }
           }
         }
         var res = [];
@@ -201,4 +206,3 @@
 
   </body>
 </html>
-

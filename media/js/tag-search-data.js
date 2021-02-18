@@ -40,8 +40,7 @@ var problems = {
         name: "560. subarray sum equals k",
         tags: ["array", "hashmap", "prefix_sum"],
         keywords: ["subarray", "sum"],
-        url: "https://leetcode.com/problems/subarray-sum-equals-k/",
+        url: "/leetcode/560-subarray-sums",
         notes: "get prefix sum for array, use hashamp as two-sum searching presum[i]-k time: O(N)",
     },
 };
-
