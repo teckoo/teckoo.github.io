@@ -1,3 +1,30 @@
+var tag_list = [
+    ["array", "Array"], 
+    ["string", "String"],
+    ["queue_stack", "Queue/Stack"],
+    ["heap", "Heap"],
+    ["linked_list", "Linked list"],
+    ["binary_search", "Binary search"],
+    ["sort", "Sort"],
+    ["graph", "Graph"],
+    ["hashmap", "Hashmap"],
+    ["backtrack", "Backtrack"],
+    ["dfs", "DFS"],
+    ["bfs", "BFS"],
+    ["tree", "Tree"],
+    ["trie", "Trie"],
+    ["two_pointers", "Two pointers"],
+    ["fast_slow_pointers", "Fast/Slow pointers"],
+    ["sliding_window", "Sliding window"],
+    ["prefix_sum", "Prefix sum"],
+    ["bit", "Bit manipulation"],
+    ["dp", "Dynamic programming"],
+    ["union_find", "Union find"],
+    ["topo_sort", "Topological sort"],
+    ["segment_tree", "Segment tree"],
+    ["line_sweep", "Line sweep"]
+];
+
 var problems = {
     "1": {
         name: "1. Two Sum",
