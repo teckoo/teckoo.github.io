@@ -23,19 +23,19 @@ Solution:
 ```python
 def subarray_sum(nums, k):
   # map：前缀和 -> 该前缀和出现的次数
-  pre_sum = {}  # (sum and count)
+  pre_sum = {}  # {sum: count}
   # base case
   pre_sum[0] = 1
 
-  ans, sum0_i = 0, 0
+  ans, sum0_r = 0, 0
   for r in range(len(nums)):
-      sum0_r += nums[r]
-      # 这是我们想找的前缀和 nums[0..r]
-      sum0_l = sum0_r - k
+      sum0_r += nums[r]  # prefix sum[0..r]
+      # 这是我们想找的前缀和 nums[0..l]
+      sum0_l = sum0_r - k  # l: 0..index
       # 如果前面有这个前缀和，则直接更新答案
       if sum0_l in pre_sum:
           ans += pre_sum[sum0_l]
-      # 把前缀和 nums[0..i] 加入并记录出现次数
+      # 把前缀和 nums[0..r] 加入并记录出现次数
       pre_sum[sum0_r] = pre_sum.get(sum0_r, 0) + 1
   return ans
 ```
