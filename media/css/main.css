@@ -8,7 +8,7 @@ body, th, td { font:12pt Arial,Helvetica,sans-serif;
 /* LINKS */
 a {text-decoration: none;}
 a img {border: none; margin-right:10px;}
-a:link, a:visited { color:#e0f090; }
+a:link, a:visited { color:#80b0f0; }
 a:hover { color:#fffd48; }
 /*
 #content-main a:link, #content-main a:visited { color:#ab5603; text-decoration:underline; }
