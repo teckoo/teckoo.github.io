@@ -1,5 +1,5 @@
 var tag_list = [
-    ["array", "Array"], 
+    ["array", "Array"],
     ["string", "String"],
     ["queue_stack", "Queue/Stack"],
     ["heap", "Heap"],
@@ -24,6 +24,19 @@ var tag_list = [
     ["segment_tree", "Segment tree"],
     ["line_sweep", "Line sweep"]
 ];
+
+var templates = {
+    "bfs":"",
+    "dfs":"",
+    "binary_search":"",
+    "backtrack":"",
+    "topo_sort":"",
+    "cycle_sort":"",
+    "quick_sort":"",
+    "merge_sort":"",
+    "reverse_list":"",
+    "sliding_window":"",
+};
 
 var problems = {
     "1": {
@@ -62,6 +75,40 @@ var problems = {
         keywords: ["two sum"],
         url: "some link",
         notes: "quick note",
+    },
+    "46": {
+        name: "46. permutations",
+        url: "/leetcode/46-permutations",
+        tags: ["backtrack"],
+        keywords: ["permutation"],
+        template: ["backtrack"],
+        notes: "Backtrack template. End condition: path=nums[:i]+nums[i+1]. res.append([nums[i]] + path]) Time: O(N!), Space: O(N!)",
+    },
+    "51": {
+        name: "51. N queens",
+        url: "/leetcode/51-n-queens",
+        tags: ["backtrack"],
+        keywords: ["N queens"],
+        template: ["backtrack"],
+        notes: "Backtrack template. bt(grid, 0). End condition: row==len(grid). grid[row][col]='Q';bt();grid[row][col]='.'. Time: O(N!), Space: O(N!)",
+    },
+
+    "111": {
+        name: "111. Minimum Depth of Binary Tree",
+        url: "/leetcode/111-minimum-depth-of-binary-tree",
+        tags: ["bfs", "tree"],
+        keywords: ["tree depth"],
+        template: ["bfs"],
+        notes: "BFS template. deque. level traverse. range(len(que)), add children to next level.",
+    },
+
+    "322": {
+        name: "322. coin change",
+        url: "/leetcode/322-coin-change",
+        tags: ["dp"],
+        keywords: ["coin change"],
+        template: ["dp"],
+        notes: "topdown: res = min(res,sub_res+1), bottomUp: dp[i]=min(dp[i],dp[i-coin]+1). Time: O(amount*N), Space: O(amount)",
     },
     "560": {
         name: "560. subarray sum equals k",
