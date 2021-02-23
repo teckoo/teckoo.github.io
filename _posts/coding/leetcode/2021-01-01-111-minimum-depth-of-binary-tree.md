@@ -5,6 +5,7 @@ categories: [leetcode]
 ---
 
 [Leetcode Link](https://leetcode.com/problems/minimum-depth-of-binary-tree/)
+| [BFS template](/template/bfs)
 
 Given a binary tree, find its minimum depth.
 
@@ -29,7 +30,7 @@ def minDepth(self, root: TreeNode) -> int:
         for _ in range(sz):
             cur = que.popleft()
             if not cur.left and not cur.right:
-                # print(f"node val={cur.val}, {depth}")
+                # find a leaf
                 return depth
             if cur.left:
                 # print(f"add val={cur.left.val}, {depth}")

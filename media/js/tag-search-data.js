@@ -26,16 +26,16 @@ var tag_list = [
 ];
 
 var templates = {
-    "bfs":"",
-    "dfs":"",
-    "binary_search":"",
-    "backtrack":"",
-    "topo_sort":"",
-    "cycle_sort":"",
-    "quick_sort":"",
-    "merge_sort":"",
-    "reverse_list":"",
-    "sliding_window":"",
+    "bfs": "/summary/bfs.md",
+    "dfs": "",
+    "binary_search": "",
+    "backtrack": "",
+    "topo_sort": "",
+    "cycle_sort": "",
+    "quick_sort": "",
+    "merge_sort": "",
+    "reverse_list": "",
+    "sliding_window": "",
 };
 
 var problems = {
@@ -82,7 +82,7 @@ var problems = {
         tags: ["backtrack"],
         keywords: ["permutation"],
         template: ["backtrack"],
-        notes: "Backtrack template. End condition: path=nums[:i]+nums[i+1]. res.append([nums[i]] + path]) Time: O(N!), Space: O(N!)",
+        notes: "Backtrack template. End condition: path=nums[:i]+nums[i+1:]. res.append([nums[i]] + path]) Time: O(N!), Space: O(N!)",
     },
     "51": {
         name: "51. N queens",
@@ -101,7 +101,6 @@ var problems = {
         template: ["bfs"],
         notes: "BFS template. deque. level traverse. range(len(que)), add children to next level.",
     },
-
     "322": {
         name: "322. coin change",
         url: "/leetcode/322-coin-change",
@@ -116,5 +115,13 @@ var problems = {
         keywords: ["subarray", "sum"],
         url: "/leetcode/560-subarray-sums",
         notes: "get prefix sum for array, use hashamp as two-sum searching presum[i]-k time: O(N)",
+    },
+    "752": {
+        name: "752. Open the Lock",
+        url: "/leetcode/752-open-the-lock",
+        tags: ["bfs",],
+        keywords: ["lock"],
+        template: ["bfs"],
+        notes: "BFS template. deque. level traverse. range(len(que)), add children to next level.",
     },
 };

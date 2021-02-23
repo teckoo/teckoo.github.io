@@ -114,6 +114,13 @@ dt { font-weight:bold; margin-top:.5em; font-size:1.1em; }
 dd { margin-bottom:.8em; }
 dl.index dt { font-weight: normal; }
 
+/* table */
+.entry table tbody tr td {
+    padding: 5px 13px;   
+    border: 1px solid;
+    border-color: #888888
+}
+
 /*  RSS  */
 
 a.rss { font:bold 10px Verdana, sans-serif; padding:0 .2em; border: 1px solid; text-decoration:none; background:#f60;color: #fff; border-color:#ffc8a4 #7d3302 #3f1a01 #ff9a57; margin:0 3px; vertical-align:middle; }
