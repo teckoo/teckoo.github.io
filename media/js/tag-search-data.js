@@ -90,7 +90,7 @@ var problems = {
         tags: ["backtrack"],
         keywords: ["N queens"],
         template: ["backtrack"],
-        notes: "Backtrack template. bt(grid, 0). End condition: row==len(grid). grid[row][col]='Q';bt();grid[row][col]='.'. Time: O(N!), Space: O(N!)",
+        notes: "Backtrack template. bt(grid, 0). End condition: row==len(grid). diag_l[row+col], diag_r[col-row+n-1], grid[row][col]='Q';bt();grid[row][col]='.'. Time: O(N!), Space: O(N!)",
     },
     "111": {
         name: "111. Minimum Depth of Binary Tree",
