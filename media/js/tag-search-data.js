@@ -92,7 +92,6 @@ var problems = {
         template: ["backtrack"],
         notes: "Backtrack template. bt(grid, 0). End condition: row==len(grid). grid[row][col]='Q';bt();grid[row][col]='.'. Time: O(N!), Space: O(N!)",
     },
-
     "111": {
         name: "111. Minimum Depth of Binary Tree",
         url: "/leetcode/111-minimum-depth-of-binary-tree",
@@ -100,6 +99,22 @@ var problems = {
         keywords: ["tree depth"],
         template: ["bfs"],
         notes: "BFS template. deque. level traverse. range(len(que)), add children to next level.",
+    },
+    "141": {
+        name: "141. Linked List Cycle",
+        url: "/leetcode/141-linked-list-cycle",
+        tags: ["fast_slow_pointers", "linked_list"],
+        keywords: ["cycle list"],
+        template: ["fast_slow_pointers"],
+        notes: "Fast/Slow pointers, T:O(N), S:O(1)",
+    },
+    "142": {
+        name: "142. Linked List Cycle II",
+        url: "/leetcode/142-linked-list-cyclei-ii",
+        tags: ["fast_slow_pointers", "linked_list"],
+        keywords: ["cycle list"],
+        template: ["fast_slow_pointers"],
+        notes: "Fast/Slow pointers, 先找到meetpoint，再从头同步前进直到相遇。T:O(N), S:O(1)",
     },
     "322": {
         name: "322. coin change",
