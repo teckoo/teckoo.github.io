@@ -110,7 +110,7 @@ var problems = {
     },
     "142": {
         name: "142. Linked List Cycle II",
-        url: "/leetcode/142-linked-list-cyclei-ii",
+        url: "/leetcode/142-linked-list-cycle-ii",
         tags: ["fast_slow_pointers", "linked_list"],
         keywords: ["cycle list"],
         template: ["fast_slow_pointers"],
