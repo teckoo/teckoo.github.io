@@ -5,7 +5,7 @@ categories: [leetcode]
 ---
 
 [Leetcode Link](https://leetcode.com/problems/permutations/)
-| [Backtrack template](/template/sliding_window)
+| [Sliding window template](/template/sliding_window)
 
 Given two strings s and t, return the minimum window in s which will contain all the characters in t. If there is no such window in s that covers all characters in t, return the empty string "".
 
