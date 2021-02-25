@@ -94,11 +94,11 @@ var problems = {
     },
     "76": {
         name: "76. Minimum Window Substring",
-        url: "/leetcode/51-n-queens",
-        tags: ["backtrack"],
-        keywords: ["N queens"],
-        template: ["backtrack"],
-        notes: "Backtrack template. bt(grid, 0). End condition: row==len(grid). diag_l[row+col], diag_r[col-row+n-1], grid[row][col]='Q';bt();grid[row][col]='.'. Time: O(N!), Space: O(N!)",
+        url: "/leetcode/76-minimum-window-substring",
+        tags: ["sliding_window"],
+        keywords: ["minimum window", "string"],
+        template: ["sliding_window"],
+        notes: "Sliding window template. while increase right, while shrink left. Time: O(S+T), Space: O(|S|)",
     },
     "111": {
         name: "111. Minimum Depth of Binary Tree",
