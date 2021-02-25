@@ -27,15 +27,14 @@ var tag_list = [
 
 var templates = {
     "bfs": "/template/bfs",
-    "dfs": "",
-    "binary_search": "",
-    "backtrack": "",
-    "topo_sort": "",
-    "cycle_sort": "",
-    "quick_sort": "",
-    "merge_sort": "",
-    "reverse_list": "",
-    "sliding_window": "",
+    "dfs": "/template/dfs",
+    "binary_search": "/template/binary_search",
+    "backtrack": "/template/backtrack",
+    "topo_sort": "/template/topo_sort",
+    "cycle_sort": "/template/cycle_sort",
+    "quick_sort": "/template/quick_sort",
+    "merge_sort": "/template/merge_sort",
+    "sliding_window": "/template/sliding_window",
 };
 
 var problems = {
@@ -62,6 +61,14 @@ var problems = {
         keywords: ["longest string", "string", "hashmap"],
         template: ["sliding_window"],
         notes: "Sliding window template. update res while increase right. Time: O(N), Space: O(N)",
+    },
+    "34": {
+        name: "34. Find First and Last Position of Element in Sorted Array",
+        url: "/leetcode/34-find-first-and-last-position-of-element-in-sorted-array",
+        tags: ["binary_search",],
+        keywords: ["search range"],
+        template: ["binary_search"],
+        notes: "Binary search for boundary, check end condition",
     },
     "46": {
         name: "46. permutations",
@@ -142,6 +149,14 @@ var problems = {
         keywords: ["subarray", "sum"],
         url: "/leetcode/560-subarray-sums",
         notes: "get prefix sum for array, use hashamp as two-sum searching presum[i]-k time: O(N)",
+    },
+    "704": {
+        name: "704. Binary Search",
+        url: "/leetcode/704-binary-search",
+        tags: ["binary_search",],
+        keywords: ["1 item"],
+        template: ["binary_search"],
+        notes: "Simplest binary search, one item, l<=r",
     },
     "752": {
         name: "752. Open the Lock",
