@@ -143,7 +143,7 @@ var problems = {
     },
     "438": {
         name: "438. Find All Anagrams in a String",
-        url: "/leetcode/find-all-anagrams-in-a-string",
+        url: "/leetcode/438-find-all-anagrams-in-a-string",
         tags: ["sliding_window"],
         keywords: ["minimum window", "string"],
         template: ["sliding_window"],
