@@ -141,6 +141,14 @@ var problems = {
         template: ["dp"],
         notes: "topdown: res = min(res,sub_res+1), bottomUp: dp[i]=min(dp[i],dp[i-coin]+1). Time: O(amount*N), Space: O(amount)",
     },
+    "438": {
+        name: "438. Find All Anagrams in a String",
+        url: "/leetcode/find-all-anagrams-in-a-string",
+        tags: ["sliding_window"],
+        keywords: ["minimum window", "string"],
+        template: ["sliding_window"],
+        notes: "Sliding window template. Time: O(S+T), Space: O(|S|)",
+    },
     "560": {
         name: "560. subarray sum equals k",
         tags: ["array", "hashmap", "prefix_sum"],
