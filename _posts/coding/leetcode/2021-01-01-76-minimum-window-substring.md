@@ -25,17 +25,17 @@ def minWindow(self, s, t):
   if not t or not s: return ""
 
   # Dictionary which keeps a count of all the unique characters in t.
-  dict_t = collections.Counter(t)
+  needs = collections.Counter(t)
 
   # Number of unique characters in t, which need to be present in the desired window.
-  required = len(dict_t)
+  required = len(needs)
 
   # left and right pointer
   l, r = 0, 0
 
-  # formed is used to keep track of how many unique characters in t are present in the current window in its desired frequency.
-  # e.g. if t is "AABC" then the window must have two A's, one B and one C. Thus formed would be = 3 when all these conditions are met.
-  formed = 0
+  # match is used to keep track of how many unique characters in t are present in the current window in its desired frequency.
+  # e.g. if t is "AABC" then the window must have two A's, one B and one C. Thus match would be = 3 when all these conditions are met.
+  match = 0
 
   # Dictionary which keeps a count of all the unique characters in the current window.
   window_counts = {}
@@ -49,16 +49,16 @@ def minWindow(self, s, t):
     ch = s[r]
     window_counts[ch] = window_counts.get(ch, 0) + 1
 
-    # add to `formed` when size matches, 
+    # add to `match` when size matches, 
     # it can go beyong, but count only once.  
-    if ch in dict_t and window_counts[ch] == dict_t[ch]:
-      formed += 1
+    if ch in needs and window_counts[ch] == needs[ch]:
+      match += 1
 
     # increase right side, part 1 done
     r += 1
 
     # shrink the left side, part 2
-    while l <= r and formed == required:
+    while l < r and match == required:
       ch = s[l]
 
       # update window size
@@ -66,8 +66,8 @@ def minWindow(self, s, t):
         ans = (r - l, l, r)
 
       window_counts[ch] -= 1
-      if ch in dict_t and window_counts[ch] < dict_t[ch]:
-        formed -= 1  # extra counts don't count
+      if ch in needs and window_counts[ch] < needs[ch]:
+        match -= 1  # extra counts don't count
 
       l += 1
 
