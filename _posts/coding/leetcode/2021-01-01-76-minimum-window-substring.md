@@ -4,7 +4,7 @@ title: "76. Minimum Window Substring"
 categories: [leetcode]
 ---
 
-[Leetcode Link](https://leetcode.com/problems/permutations/)
+[Leetcode Link](https://leetcode.com/problems/minimum-window-substring/)
 | [Sliding window template](/template/sliding_window)
 
 Given two strings s and t, return the minimum window in s which will contain all the characters in t. If there is no such window in s that covers all characters in t, return the empty string "".

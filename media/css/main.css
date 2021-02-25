@@ -179,7 +179,7 @@ blockquote {
 pre {
  border: 1px solid #cccccc;
  padding: 0px 5px;
- margin-left: 2em;
+ /*margin-left: 2em;*/
  overflow: auto;
 }
 pre.huge{ font-size: 200%; } 

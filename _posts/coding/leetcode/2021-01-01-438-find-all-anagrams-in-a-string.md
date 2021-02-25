@@ -4,7 +4,7 @@ title: "438. Find All Anagrams in a String"
 categories: [leetcode]
 ---
 
-[Leetcode Link](https://leetcode.com/problems/minimum-window-substring/)
+[Leetcode Link](https://leetcode.com/problems/find-all-anagrams-in-a-string/)
 | [Sliding window template](/template/sliding_window)
 
 Given a string s and a non-empty string p, find all the start indices of p's anagrams in s.
