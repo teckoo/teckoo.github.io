@@ -6,7 +6,7 @@ categories: [template]
 
 # Template
 
-[Explaination Details](./summary.md) | [Template Index](../template_list.md)
+[Explaination Details](./sliding_window_summary) | [Template Index](/template/template_list)
 
 ```python
 # for LC Problem 76

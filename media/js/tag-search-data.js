@@ -26,7 +26,7 @@ var tag_list = [
 ];
 
 var templates = {
-    "bfs": "/summary/bfs.md",
+    "bfs": "/template/bfs",
     "dfs": "",
     "binary_search": "",
     "backtrack": "",
@@ -41,11 +41,11 @@ var templates = {
 var problems = {
     "1": {
         name: "1. Two Sum",
-        tags: ["array"],
+        tags: ["array", "hashmap"],
         keywords: ["two sum"],
-        url: "https://github.com/somelink",
-        notes: "quick note",
-        templates: ["two pointers"],
+        url: "/leetcode/1-two-sum",
+        notes: "hashmap, T: O(N), S: O(N)",
+        templates: [],
         companies: ["bloomberg", "amazon"],
     },
     "2": {
@@ -92,6 +92,14 @@ var problems = {
         template: ["backtrack"],
         notes: "Backtrack template. bt(grid, 0). End condition: row==len(grid). diag_l[row+col], diag_r[col-row+n-1], grid[row][col]='Q';bt();grid[row][col]='.'. Time: O(N!), Space: O(N!)",
     },
+    "76": {
+        name: "76. Minimum Window Substring",
+        url: "/leetcode/51-n-queens",
+        tags: ["backtrack"],
+        keywords: ["N queens"],
+        template: ["backtrack"],
+        notes: "Backtrack template. bt(grid, 0). End condition: row==len(grid). diag_l[row+col], diag_r[col-row+n-1], grid[row][col]='Q';bt();grid[row][col]='.'. Time: O(N!), Space: O(N!)",
+    },
     "111": {
         name: "111. Minimum Depth of Binary Tree",
         url: "/leetcode/111-minimum-depth-of-binary-tree",
@@ -116,6 +124,15 @@ var problems = {
         template: ["fast_slow_pointers"],
         notes: "Fast/Slow pointers, 先找到meetpoint，再从头同步前进直到相遇。T:O(N), S:O(1)",
     },
+    "167": {
+        name: "167. Two Sum II - Input array is sorted",
+        tags: ["array", "two_pointers"],
+        keywords: ["two sum", "sorted"],
+        url: "/leetcode/167-two-sum-ii-input-array-is-sorted",
+        notes: "Two pointers, T: O(N), S: O(N)",
+        templates: ["two_pointers"],
+        companies: ["bloomberg", "amazon"],
+    }, 
     "322": {
         name: "322. coin change",
         url: "/leetcode/322-coin-change",
