@@ -94,6 +94,14 @@ var problems = {
         template: ["sliding_window"],
         notes: "Sliding window template. while increase right, while shrink left. Time: O(S+T), Space: O(|S|)",
     },
+    "100": {
+        name: "100. Same Tree",
+        url: "/leetcode/100-same-tree",
+        tags: ["tree"],
+        keywords: ["preorder"],
+        template: ["tree"],
+        notes: "Tree traverse template. Preorder, check both null, 1 null, compare 2 values.",
+    },
     "111": {
         name: "111. Minimum Depth of Binary Tree",
         url: "/leetcode/111-minimum-depth-of-binary-tree",
@@ -157,7 +165,7 @@ var problems = {
         tags: ["hashmap", "linked_list"],
         keywords: ["LFU", "double_linked_list"],
         template: [],
-        notes: "1 hashamp {key:Node}, 1 hashmap defaultdict(DlinkedList) {freq:key_list}, min_freq",
+        notes: "1 hashamp {key:Node}, 1 hashmap defaultdict(OrderedDict/DlinkedList) {freq:key_list}, min_freq",
     },
     
     "560": {
