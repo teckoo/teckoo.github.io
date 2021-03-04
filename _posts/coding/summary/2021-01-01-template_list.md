@@ -18,7 +18,7 @@ categories: [template]
 
 [Dynamic Programming][] 
 
-[SQL problems](./sql)
+[SQL problems](/leetcode/sql)
 
 [Snippets]: ./snippets
 [Bitwise]: ./bitwise
