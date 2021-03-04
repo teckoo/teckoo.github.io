@@ -18,6 +18,8 @@ categories: [template]
 
 [Dynamic Programming][] 
 
+[SQL problems](./sql)
+
 [Snippets]: ./snippets
 [Bitwise]: ./bitwise
 [Math]: ./math

@@ -118,6 +118,14 @@ var problems = {
         template: ["fast_slow_pointers"],
         notes: "Fast/Slow pointers, 先找到meetpoint，再从头同步前进直到相遇。T:O(N), S:O(1)",
     },
+    "146": {
+        name: "146. LRU Cache",
+        url: "/leetcode/146-lru-cache",
+        tags: ["hashmap", "linked_list"],
+        keywords: ["LRU", "double_linked_list"],
+        template: [],
+        notes: "OrderedDict, both get()/put(): move_to_end(). raw code, use head/tail dummy nodes.",
+    },
     "167": {
         name: "167. Two Sum II - Input array is sorted",
         tags: ["array", "two_pointers"],
