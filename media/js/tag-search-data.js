@@ -124,7 +124,7 @@ var problems = {
         tags: ["hashmap", "linked_list"],
         keywords: ["LRU", "double_linked_list"],
         template: [],
-        notes: "OrderedDict, both get()/put(): move_to_end(). raw code, use head/tail dummy nodes.",
+        notes: "OrderedDict, both get()/put(): move_to_end(). raw code, use head/tail dummy nodes; cache{key:Node}.",
     },
     "167": {
         name: "167. Two Sum II - Input array is sorted",
@@ -151,6 +151,15 @@ var problems = {
         template: ["sliding_window"],
         notes: "Sliding window template. Time: O(S+T), Space: O(|S|)",
     },
+    "460": {
+        name: "460. LFU Cache",
+        url: "/leetcode/460-lfu-cache",
+        tags: ["hashmap", "linked_list"],
+        keywords: ["LFU", "double_linked_list"],
+        template: [],
+        notes: "1 hashamp {key:Node}, 1 hashmap defaultdict(DlinkedList) {freq:key_list}, min_freq",
+    },
+    
     "560": {
         name: "560. subarray sum equals k",
         tags: ["array", "hashmap", "prefix_sum"],
