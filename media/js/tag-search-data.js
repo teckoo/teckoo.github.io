@@ -94,6 +94,14 @@ var problems = {
         template: ["sliding_window"],
         notes: "Sliding window template. while increase right, while shrink left. Time: O(S+T), Space: O(|S|)",
     },
+    "98": {
+        name: "",
+        url: "/leetcode/98-validate-binary-search-tree",
+        tags: ["tree"],
+        keywords: ["preorder"],
+        template: ["tree"],
+        notes: "Tree traverse template. Preorder, valid (root, low, high), then recursion (left, low, root) && (right, root, high)",
+    },
     "100": {
         name: "100. Same Tree",
         url: "/leetcode/100-same-tree",
