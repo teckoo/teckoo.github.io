@@ -26,8 +26,8 @@ def minDepth(self, root: TreeNode) -> int:
     que.append(root)
     depth = 1  # root init depth
     while que:
-        sz = len(que)  # current level size
-        for _ in range(sz):
+        # go through current level
+        for _ in range(len(que)): # use len, not que.
             cur = que.popleft()
             if not cur.left and not cur.right:
                 # find a leaf

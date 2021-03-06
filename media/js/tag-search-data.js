@@ -95,7 +95,7 @@ var problems = {
         notes: "Sliding window template. while increase right, while shrink left. Time: O(S+T), Space: O(|S|)",
     },
     "98": {
-        name: "",
+        name: "98. Validate binary search tree",
         url: "/leetcode/98-validate-binary-search-tree",
         tags: ["tree"],
         keywords: ["preorder"],
