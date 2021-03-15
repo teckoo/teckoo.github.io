@@ -20,17 +20,16 @@ Explanation: There is a cycle in the linked list, where the tail connects to the
 
 ```python
 def hasCycle(self, head: ListNode) -> bool:
-   if not head:
-     return False
+   if not head: return False
+   # now head is not NULL
    slow = head
    fast = head.next
    while slow != fast:
-     # print(fast.val, slow.val)
      if not fast or not fast.next:
-       return False
+       return False  # no cycle
      slow = slow.next
      fast = fast.next.next
    return True
 ```
 
-如果被问还有没有其它解法，可以用Hashset, Time: O(N), but Space is O(N). 
+如果被问还有没有其它解法，可以用`Hashset`存每个node, same Time: O(N), but Space is O(N). 
