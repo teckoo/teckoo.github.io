@@ -150,7 +150,15 @@ var problems = {
         tags: ["tree"],
         keywords: ["BST", "count"],
         template: ["tree"],
-        notes: "Tree template.",
+        notes: "Tree template. Time: O(lgN*lgN), only 1 side recursive",
+    },
+    "297": {
+        name: "297. Serialize and Deserialize Binary Tree",
+        url: "/leetcode/297-serialize-and-deserialize-binary-tree",
+        tags: ["tree"],
+        keywords: ["tree", "serialize"],
+        template: ["tree"],
+        notes: "Tree template. Preorder, must have separator and null char. Post-order is harder, inorder impossible",
     },
     "322": {
         name: "322. coin change",
