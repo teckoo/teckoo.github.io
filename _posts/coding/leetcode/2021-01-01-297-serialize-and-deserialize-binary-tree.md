@@ -1,6 +1,7 @@
 ---
 layout: leetcode
-title: "297. Serialize and Deserialize Binary Tree" categories: [leetcode]
+title: "297. Serialize and Deserialize Binary Tree" 
+categories: [leetcode]
 ---
 
 [Leetcode Link](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/)
