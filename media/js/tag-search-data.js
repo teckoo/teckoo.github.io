@@ -144,6 +144,14 @@ var problems = {
         templates: ["two_pointers"],
         companies: ["bloomberg", "amazon"],
     },
+    "222": {
+        name: "222. Count Complete Tree Nodes",
+        url: "/leetcode/222-count-complete-tree-nodes",
+        tags: ["tree"],
+        keywords: ["BST", "count"],
+        template: ["tree"],
+        notes: "Tree template.",
+    },
     "322": {
         name: "322. coin change",
         url: "/leetcode/322-coin-change",
