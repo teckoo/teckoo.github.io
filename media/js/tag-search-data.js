@@ -152,6 +152,14 @@ var problems = {
         template: ["tree"],
         notes: "Tree template. Time: O(lgN*lgN), only 1 side recursive",
     },
+    "236": {
+        name: "",
+        url: "/leetcode/236-lowest-common-ancestor-of-a-binary-tree",
+        tags: ["tree"],
+        keywords: ["tree", "common ancestor"],
+        template: ["tree"],
+        notes: "Tree template.",
+    },
     "297": {
         name: "297. Serialize and Deserialize Binary Tree",
         url: "/leetcode/297-serialize-and-deserialize-binary-tree",
