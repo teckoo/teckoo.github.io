@@ -214,7 +214,7 @@ var problems = {
         tags: ["queue_stack"],
         keywords: ["mono stack", "circular array"],
         template: ["queue_stack"],
-        notes: "Mono stack template, loop from end, double array length",
+        notes: "Mono stack template, loop from end, array length 2*n-1",
     },
     "560": {
         name: "560. subarray sum equals k",
