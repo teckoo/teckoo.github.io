@@ -206,7 +206,7 @@ var problems = {
         tags: ["queue_stack"],
         keywords: ["mono stack"],
         template: ["queue_stack"],
-        notes: "Mono stack template, loop from end",
+        notes: "Mono stack template, loop from end, use map for result",
     },
     "560": {
         name: "560. subarray sum equals k",
@@ -237,7 +237,7 @@ var problems = {
         tags: ["queue_stack"],
         keywords: ["mono stack", "temperature"],
         template: ["queue_stack"],
-        notes: "Mono stack template, loop from end",
+        notes: "Mono stack template, loop from end, store index",
     },
     "752": {
         name: "752. Open the Lock",
