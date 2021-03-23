@@ -231,6 +231,14 @@ var problems = {
         template: ["binary_search"],
         notes: "Simplest binary search, one item, l<=r",
     },
+    "739": {
+        name: "739. Daily Temperatures",
+        url: "/leetcode/739-daily-temperatures",
+        tags: ["queue_stack"],
+        keywords: ["mono stack", "temperature"],
+        template: ["queue_stack"],
+        notes: "Mono stack template, loop from end",
+    },
     "752": {
         name: "752. Open the Lock",
         url: "/leetcode/752-open-the-lock",
