@@ -25,7 +25,7 @@ For number 2 in the first array, there is no next greater number for it in the s
 Solution: 
 
 ```python
-def next_grater_element(nums):
+def next_greater_element(nums):
     res = []
     stack = collections.deque()
     for i in range(len(nums) - 1, -1, -1):

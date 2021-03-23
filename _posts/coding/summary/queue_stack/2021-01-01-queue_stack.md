@@ -14,7 +14,7 @@ O(N) because every number at most push/pop once.
 for loop starts from the end. 
 
 ```python
-def next_grater_element(nums):
+def next_greater_element(nums):
     res = []
     stack = collections.deque()
     for i in range(len(nums) - 1, -1, -1):
