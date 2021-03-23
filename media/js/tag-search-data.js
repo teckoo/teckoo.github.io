@@ -200,6 +200,14 @@ var problems = {
         template: [],
         notes: "1 hashamp {key:Node}, 1 hashmap defaultdict(OrderedDict/DlinkedList) {freq:key_list}, min_freq",
     },
+    "496": {
+        name: "496. Next Greater Element I",
+        url: "/leetcode/496-next-greater-element-i",
+        tags: ["queue_stack"],
+        keywords: ["mono stack"],
+        template: ["queue_stack"],
+        notes: "Mono stack template, loop from end",
+    },
     "560": {
         name: "560. subarray sum equals k",
         tags: ["array", "hashmap", "prefix_sum"],

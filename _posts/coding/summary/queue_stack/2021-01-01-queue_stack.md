@@ -11,6 +11,7 @@ categories: [template]
 ## Mono stack template
 
 O(N) because every number at most push/pop once.
+for loop starts from the end. 
 
 ```python
 def next_grater_element(nums):
