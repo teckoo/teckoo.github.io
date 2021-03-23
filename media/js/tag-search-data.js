@@ -209,12 +209,12 @@ var problems = {
         notes: "Mono stack template, loop from end, use map for result",
     },
     "503": {
-        name: "",
-        url: "/leetcode/503-",
+        name: "503. Next Greater Element II",
+        url: "/leetcode/503-next-greater-element-ii",
         tags: ["queue_stack"],
         keywords: ["mono stack", "circular array"],
         template: ["queue_stack"],
-        notes: "Mono stack template, loop from end, store index",
+        notes: "Mono stack template, loop from end, double array length",
     },
     "560": {
         name: "560. subarray sum equals k",
