@@ -160,6 +160,14 @@ var problems = {
         template: ["tree"],
         notes: "Tree template. check left and right",
     },
+    "239": {
+        name: "239. Sliding Window Maximum",
+        url: "/leetcode/239-sliding-window-maximum",
+        tags: ["array", "queue_stack"],
+        keywords: ["mono queue"],
+        template: ["queue_stack"],
+        notes: "Mono queue template, pop(i - k + 1)",
+    },
     "297": {
         name: "297. Serialize and Deserialize Binary Tree",
         url: "/leetcode/297-serialize-and-deserialize-binary-tree",
@@ -203,7 +211,7 @@ var problems = {
     "496": {
         name: "496. Next Greater Element I",
         url: "/leetcode/496-next-greater-element-i",
-        tags: ["queue_stack"],
+        tags: ["array", "queue_stack"],
         keywords: ["mono stack"],
         template: ["queue_stack"],
         notes: "Mono stack template, loop from end, use map for result",
@@ -211,7 +219,7 @@ var problems = {
     "503": {
         name: "503. Next Greater Element II",
         url: "/leetcode/503-next-greater-element-ii",
-        tags: ["queue_stack"],
+        tags: ["array", "queue_stack"],
         keywords: ["mono stack", "circular array"],
         template: ["queue_stack"],
         notes: "Mono stack template, loop from end, array length 2*n-1",

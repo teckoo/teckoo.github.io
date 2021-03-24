@@ -8,6 +8,10 @@ categories: [template]
 
 [Explaination Details](./summary.md) | [Template Index](../template_list.md)
 
+- [Template](#template)
+  - [Mono stack template](#mono-stack-template)
+  - [Monotonic queue template](#monotonic-queue-template)
+ 
 ## Mono stack template
 
 O(N) because every number at most push/pop once.
@@ -56,3 +60,33 @@ def maxSlidingWindow(self, nums: List[int], k: int) -> List[int]:
 
 LC:
 [239 sliding window max]
+
+MonoQueue data structure
+
+```python
+class MonoQueue:
+    def __init__(self):
+        self.data = collections.deque()
+
+    def push(self, n):
+        while data and data[0] < n:
+            data.pop()
+        data.append(n)
+
+    def max(self):
+        return data[0]
+
+    def pop(n):
+        if data and data[0] == n:
+            data.popleft()
+
+
+def max_sliding_win(nums, k):
+    window = MonoQueue()
+    res = []
+    for i in range(len(nums)):
+        window.push(nums[i])
+        if i >= k:
+            res.append(window.max())
+            window.pop(nums[i - k + 1])
+```
