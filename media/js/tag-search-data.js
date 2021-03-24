@@ -250,7 +250,7 @@ var problems = {
     "739": {
         name: "739. Daily Temperatures",
         url: "/leetcode/739-daily-temperatures",
-        tags: ["queue_stack"],
+        tags: ["array", "queue_stack"],
         keywords: ["mono stack", "temperature"],
         template: ["queue_stack"],
         notes: "Mono stack template, loop from end, store index",
