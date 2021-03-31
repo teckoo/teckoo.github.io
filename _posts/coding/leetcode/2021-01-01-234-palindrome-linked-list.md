@@ -22,7 +22,9 @@ Input: head = [1,2]
 Output: false
 ```
 
-# Fast/Slow pointers
+Solution:
+
+* Fast/Slow pointers
 
 ```python
 def isPalindrome(self, head: ListNode) -> bool:

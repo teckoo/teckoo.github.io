@@ -49,3 +49,18 @@ def reverse(ListNode head):
 ```
 
 ![recursion version](./reverse_linkedlist_recursion.jpg)
+
+
+### Reverse first N node
+
+```python
+successor = None
+def reverseN(head, n):
+    if n == 1:
+        successor = head.next
+        return head
+    last = reverseN(head.next, n-1)
+    head.next.next = head
+    head.next = successor
+    return last
+```

@@ -87,6 +87,14 @@ var problems = {
         template: ["sliding_window"],
         notes: "Sliding window template. while increase right, while shrink left. Time: O(S+T), Space: O(|S|)",
     },
+    "92": {
+        name: "92. Reverse Linked List II",
+        url: "/leetcode/92-reverse-linked-list-ii",
+        tags: ["linked_list"],
+        keywords: ["reverse partial"],
+        template: ["linked_list"],
+        notes: "Recursive find the first position, reverse N node. T:O(N), S:O(1)",
+    },
     "98": {
         name: "98. Validate binary search tree",
         url: "/leetcode/98-validate-binary-search-tree",
