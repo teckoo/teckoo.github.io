@@ -152,6 +152,14 @@ var problems = {
         template: ["tree"],
         notes: "Tree template. Time: O(lgN*lgN), only 1 side recursive",
     },
+    "234": {
+        name: "234. Palindrome Linked List",
+        url: "/leetcode/234-palindrome-linked-list",
+        tags: ["linked_list"],
+        keywords: ["palindrome"],
+        template: ["linked_list"],
+        notes: "Find the middle node, reverse the 2nd half to compare with 1st half, reverse it back at the end. T:O(N), S:O(1)",
+    },
     "236": {
         name: "236. Lowest Common Ancestor of a Binary Tree",
         url: "/leetcode/236-lowest-common-ancestor-of-a-binary-tree",
