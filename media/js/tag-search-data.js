@@ -55,6 +55,14 @@ var problems = {
         template: ["sliding_window"],
         notes: "Sliding window template. update res while increase right. Time: O(N), Space: O(N)",
     },
+    "25": {
+        name: "25. Reverse Nodes in k-Group",
+        url: "/leetcode/25-reverse-nodes-in-k-group",
+        tags: ["linked_list"],
+        keywords: ["reverse"],
+        template: ["linked_list"],
+        notes: "Recursive reverse N node. T:O(N), S:O(1)",
+    },
     "34": {
         name: "34. Find First and Last Position of Element in Sorted Array",
         url: "/leetcode/34-find-first-and-last-position-of-element-in-sorted-array",
@@ -91,7 +99,7 @@ var problems = {
         name: "92. Reverse Linked List II",
         url: "/leetcode/92-reverse-linked-list-ii",
         tags: ["linked_list"],
-        keywords: ["reverse partial"],
+        keywords: ["reverse"],
         template: ["linked_list"],
         notes: "Recursive find the first position, reverse N node. T:O(N), S:O(1)",
     },

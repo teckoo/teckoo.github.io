@@ -32,8 +32,10 @@ def isPalindrome(self, head: ListNode) -> bool:
   # now head is not NULL
 
   def end_of_1st_half(head):
+    """ odd: 1->2->3, return 2
+    even: 1->2->3->4, return 2 """
     slow, fast = head, head
-    while fast and fast.next:
+    while fast.next and fast.next.next:
       slow = slow.next
       fast = fast.next.next
     return slow
@@ -65,3 +67,15 @@ def isPalindrome(self, head: ListNode) -> bool:
 ```
 
 Other solutions all have same Time: O(N), but Space is O(N). 
+
+* convert to list, then two pointers
+
+```python
+def isPalindrome(self, head: ListNode) -> bool:
+    vals = []
+    current_node = head
+    while current_node is not None:
+        vals.append(current_node.val)
+        current_node = current_node.next
+    return vals == vals[::-1]
+```    
