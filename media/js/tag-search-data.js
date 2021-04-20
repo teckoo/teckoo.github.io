@@ -95,6 +95,14 @@ var problems = {
         template: ["sliding_window"],
         notes: "Sliding window template. while increase right, while shrink left. Time: O(S+T), Space: O(|S|)",
     },
+    "78": {
+        name: "78. Subsets",
+        url: "/leetcode/78-subsets",
+        tags: ["backtrack", "array"],
+        keywords: ["subsets"],
+        template: ["backtrack"],
+        notes: "M: Backtrack template. ",
+    },
     "92": {
         name: "92. Reverse Linked List II",
         url: "/leetcode/92-reverse-linked-list-ii",
