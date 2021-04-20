@@ -71,8 +71,16 @@ var problems = {
         template: ["binary_search"],
         notes: "Binary search for boundary, check end condition",
     },
+    "37": {
+        name: "37. Sudoku Solver (H)",
+        url: "/leetcode/37-sudoku-solver",
+        tags: ["backtrack", "array"],
+        keywords: ["sudoku"],
+        template: ["backtrack"],
+        notes: "Backtrack template. ",
+    },
     "46": {
-        name: "46. Permutations (M)",
+        name: "46. Permutations",
         url: "/leetcode/46-permutations",
         tags: ["backtrack"],
         keywords: ["permutation"],
