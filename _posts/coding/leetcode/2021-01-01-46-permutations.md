@@ -47,3 +47,26 @@ assert backtrack([1]) == [[1]]
 assert backtrack([1, 2]) == [[1,2], [2, 1]]
 assert len(backtrack([1, 2, 3])) == 6
 ```
+
+* Backtrack template:
+
+```python
+def permute(nums):
+    res = []
+    def backtrack(nums, path):
+        # meet condition
+        if len(path) == len(nums):
+            res.append(path)
+            return
+        for i in range(len(nums)):
+            # use logic, no removing candidate from list
+            if i in path: continue
+            # make choice
+            path.append(nums[i])
+            backtrack(nums, path)
+            # restore choice
+            path.pop()
+    track = []
+    backtrack(nums, track)
+    return res
+```    

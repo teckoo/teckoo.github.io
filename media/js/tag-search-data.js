@@ -72,7 +72,7 @@ var problems = {
         notes: "Binary search for boundary, check end condition",
     },
     "46": {
-        name: "46. permutations",
+        name: "46. Permutations (M)",
         url: "/leetcode/46-permutations",
         tags: ["backtrack"],
         keywords: ["permutation"],
@@ -80,7 +80,7 @@ var problems = {
         notes: "Backtrack template. End condition: path=nums[:i]+nums[i+1:]. res.append([nums[i]] + path]) Time: O(N!), Space: O(N!)",
     },
     "51": {
-        name: "51. N queens",
+        name: "51. N queens (M)",
         url: "/leetcode/51-n-queens",
         tags: ["backtrack"],
         keywords: ["N queens"],
@@ -104,12 +104,12 @@ var problems = {
         notes: "Backtrack template. ",
     },
     "78": {
-        name: "78. Subsets",
+        name: "78. Subsets (M)",
         url: "/leetcode/78-subsets",
         tags: ["backtrack", "array"],
         keywords: ["subsets"],
         template: ["backtrack"],
-        notes: "M: Backtrack template. Add track to result",
+        notes: "Backtrack template. Add track to result",
     },
     "92": {
         name: "92. Reverse Linked List II",
