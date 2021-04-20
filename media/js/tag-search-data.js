@@ -95,13 +95,21 @@ var problems = {
         template: ["sliding_window"],
         notes: "Sliding window template. while increase right, while shrink left. Time: O(S+T), Space: O(|S|)",
     },
+    "77": {
+        name: "77. Combinations (M)",
+        url: "/leetcode/77-combinations",
+        tags: ["backtrack"],
+        keywords: ["combinations"],
+        template: ["backtrack"],
+        notes: "Backtrack template. ",
+    },
     "78": {
         name: "78. Subsets",
         url: "/leetcode/78-subsets",
         tags: ["backtrack", "array"],
         keywords: ["subsets"],
         template: ["backtrack"],
-        notes: "M: Backtrack template. ",
+        notes: "M: Backtrack template. Add track to result",
     },
     "92": {
         name: "92. Reverse Linked List II",
