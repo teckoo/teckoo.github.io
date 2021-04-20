@@ -101,7 +101,7 @@ var problems = {
         tags: ["backtrack"],
         keywords: ["combinations"],
         template: ["backtrack"],
-        notes: "Backtrack template. ",
+        notes: "Backtrack template. Use 'start' to filter previous items, check len(path) == len(nums) to add to result",
     },
     "78": {
         name: "78. Subsets (M)",
@@ -109,7 +109,7 @@ var problems = {
         tags: ["backtrack", "array"],
         keywords: ["subsets"],
         template: ["backtrack"],
-        notes: "Backtrack template. Add track to result",
+        notes: "Backtrack template. User 'start' to filter, add 'track' to result",
     },
     "92": {
         name: "92. Reverse Linked List II",
