@@ -192,6 +192,15 @@ var problems = {
         templates: ["two_pointers"],
         companies: ["bloomberg", "amazon"],
     },
+    "170": {
+        name: "170. Two Sum III - Data structure design",
+        tags: ["array", "hashmap"],
+        keywords: ["two sum"],
+        url: "/leetcode/170-two-sum-iii-data-structure-design",
+        notes: "hashmap, T: O(N), S: O(N)",
+        templates: [],
+        companies: ["bloomberg", "amazon"],
+    },
     "222": {
         name: "222. Count Complete Tree Nodes",
         url: "/leetcode/222-count-complete-tree-nodes",
