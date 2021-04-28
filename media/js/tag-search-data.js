@@ -319,4 +319,12 @@ var problems = {
         template: ["bfs"],
         notes: "BFS template. deque. level traverse. range(len(que)), add children to next level.",
     },
+    "773": {
+        name: "773. Sliding Puzzle",
+        url: "/leetcode/773-sliding-puzzle",
+        tags: ["bfs",],
+        keywords: ["game"],
+        template: ["bfs"],
+        notes: "BFS template. ",
+    },
 };
