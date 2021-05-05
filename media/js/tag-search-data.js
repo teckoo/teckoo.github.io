@@ -41,7 +41,7 @@ var problems = {
     "1": {
         name: "1. Two Sum",
         tags: ["array", "hashmap"],
-        keywords: ["two sum"],
+        keywords: ["sum"],
         url: "/leetcode/1-two-sum",
         notes: "hashmap, T: O(N), S: O(N)",
         templates: [],
@@ -54,6 +54,14 @@ var problems = {
         keywords: ["longest string", "hashmap"],
         template: ["sliding_window"],
         notes: "Sliding window template. update res while increase right. Time: O(N), Space: O(N)",
+    },
+    "15": {
+        name: "15. 3Sum",
+        tags: ["array", "hashmap"],
+        keywords: ["sum"],
+        url: "/leetcode/15-3sum",
+        notes: "hashmap, T: O(N^2), S: O(N)",
+        templates: [],
     },
     "22": {
         name: "22. Generate Parentheses",
