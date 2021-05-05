@@ -63,6 +63,14 @@ var problems = {
         notes: "hashmap, T: O(N^2), S: O(N)",
         templates: [],
     },
+    "18": {
+        name: "18. 4Sum",
+        tags: ["array", "hashmap"],
+        keywords: ["sum"],
+        url: "/leetcode/18-4sum",
+        notes: "hashmap, T: O(N^3), S: O(N)",
+        templates: [],
+    },
     "22": {
         name: "22. Generate Parentheses",
         url: "/leetcode/22-generate-parentheses",
