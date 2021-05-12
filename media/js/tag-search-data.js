@@ -41,7 +41,7 @@ var problems = {
     "1": {
         name: "1. Two Sum",
         tags: ["array", "hashmap"],
-        keywords: ["sum"],
+        keywords: ["sum", "two sum"],
         url: "/leetcode/1-two-sum",
         notes: "hashmap, T: O(N), S: O(N)",
         templates: [],
@@ -224,6 +224,14 @@ var problems = {
         keywords: ["BST", "count"],
         template: ["tree"],
         notes: "Tree template. Time: O(lgN*lgN), only 1 side recursive",
+    },
+    "224": {
+        name: "224. Basic Calculator",
+        url: "/leetcode/224-basic-calculator",
+        tags: ["string", "queue_stack"],
+        keywords: ["stack"],
+        template: ["queue_stack"],
+        notes: "Using stack, divide into sub-problems",
     },
     "234": {
         name: "234. Palindrome Linked List",
