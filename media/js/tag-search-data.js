@@ -360,4 +360,12 @@ var problems = {
         template: ["bfs"],
         notes: "BFS template. ",
     },
+    "969": {
+        name: "969. Pancake Sorting",
+        tags: ["array",],
+        keywords: ["sort"],
+        url: "/leetcode/969-pancake-sorting",
+        notes: "T: O(N^2), S: O(N)",
+        templates: []
+    },
 };
