@@ -87,6 +87,14 @@ var problems = {
         template: ["linked_list"],
         notes: "Recursive reverse N node. T:O(N), S:O(1)",
     },
+    "33": {
+        name: "33. Search in Rotated Sorted Array",
+        url: "/leetcode/33-search-in-rotated-sorted-array",
+        tags: ["binary_search", "array"],
+        keywords: ["search 1 item", "rotated sorted array", "lv_1"],
+        template: ["binary_search"],
+        notes: "Binary search, one item, l<=r",
+    },
     "34": {
         name: "34. Find First and Last Position of Element in Sorted Array",
         url: "/leetcode/34-find-first-and-last-position-of-element-in-sorted-array",
@@ -141,7 +149,7 @@ var problems = {
         tags: ["backtrack", "array"],
         keywords: ["subsets", "lv_1"],
         template: ["backtrack"],
-        notes: "Backtrack template. User 'start' to filter, add 'track' to result",
+        notes: "Backtrack template. Use 'start' to filter, add 'track' to result",
     },
     "92": {
         name: "92. Reverse Linked List II",
