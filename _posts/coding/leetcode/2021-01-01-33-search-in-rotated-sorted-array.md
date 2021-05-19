@@ -4,7 +4,7 @@ title: "33. Search in Rotated Sorted Array"
 categories: [leetcode]
 ---
 
-[Leetcode Link](https://leetcode.com/problems/binary-search/)
+[Leetcode Link](https://leetcode.com/problems/search-in-rotated-sorted-array/)
 
 There is an integer array nums sorted in ascending order (with distinct values).
 
@@ -61,7 +61,7 @@ def search(self, nums, target):
         else:
           left = mid + 1
     return -1
-    
+
   if not nums: return -1
   n = len(nums)
   if n == 1: 
