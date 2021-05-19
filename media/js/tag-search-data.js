@@ -71,7 +71,15 @@ var problems = {
         notes: "hashmap, T: O(N^3), S: O(N)",
         templates: [],
     },
-    "22": {
+    "21": {
+        name: "21. Merge Two Sorted Lists",
+        url: "/leetcode/21-merge-two-sorted-lists",
+        tags: ["sort", "linked_list"],
+        keywords: ["merge_sort", "lv_1"],
+        templates: ["merge_sort"],
+        notes: "Use dummy head",
+    },
+     "22": {
         name: "22. Generate Parentheses",
         url: "/leetcode/22-generate-parentheses",
         tags: ["backtrack", "array"],
