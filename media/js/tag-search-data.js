@@ -52,7 +52,7 @@ var problems = {
         url: "/leetcode/3-longest-substring-without-repeating-characters",
         tags: ["sliding_window", "string"],
         keywords: ["longest string", "hashmap", "lv_1"],
-        template: ["sliding_window"],
+        templates: ["sliding_window"],
         notes: "Sliding window template. update res while increase right. Time: O(N), Space: O(N)",
     },
     "15": {
@@ -76,7 +76,7 @@ var problems = {
         url: "/leetcode/22-generate-parentheses",
         tags: ["backtrack", "array"],
         keywords: ["parentheses", "lv_3"],
-        template: ["backtrack"],
+        templates: ["backtrack"],
         notes: "Backtrack template. convert to validate the combinations of (). ",
     },
     "25": {
@@ -84,7 +84,7 @@ var problems = {
         url: "/leetcode/25-reverse-nodes-in-k-group",
         tags: ["linked_list"],
         keywords: ["reverse", "lv_2"],
-        template: ["linked_list"],
+        templates: ["linked_list"],
         notes: "Recursive reverse N node. T:O(N), S:O(1)",
     },
     "33": {
@@ -92,7 +92,7 @@ var problems = {
         url: "/leetcode/33-search-in-rotated-sorted-array",
         tags: ["binary_search", "array"],
         keywords: ["search 1 item", "rotated sorted array", "lv_1"],
-        template: ["binary_search"],
+        templates: ["binary_search"],
         notes: "Binary search, one item, l<=r",
     },
     "34": {
@@ -100,7 +100,7 @@ var problems = {
         url: "/leetcode/34-find-first-and-last-position-of-element-in-sorted-array",
         tags: ["binary_search",],
         keywords: ["search range", "lv_2"],
-        template: ["binary_search"],
+        templates: ["binary_search"],
         notes: "Binary search for boundary, check end condition",
     },
     "37": {
@@ -108,7 +108,7 @@ var problems = {
         url: "/leetcode/37-sudoku-solver",
         tags: ["backtrack", "array"],
         keywords: ["sudoku", "lv_3"],
-        template: ["backtrack"],
+        templates: ["backtrack"],
         notes: "Backtrack template. if j==n, move to (i+1, 0). skip invalid ",
     },
     "46": {
@@ -116,7 +116,7 @@ var problems = {
         url: "/leetcode/46-permutations",
         tags: ["backtrack"],
         keywords: ["permutation", "lv_1"],
-        template: ["backtrack"],
+        templates: ["backtrack"],
         notes: "Backtrack template. End condition: path=nums[:i]+nums[i+1:]. res.append([nums[i]] + path]) Time: O(N!), Space: O(N!)",
     },
     "51": {
@@ -124,15 +124,23 @@ var problems = {
         url: "/leetcode/51-n-queens",
         tags: ["backtrack"],
         keywords: ["N queens", "lv_1"],
-        template: ["backtrack"],
+        templates: ["backtrack"],
         notes: "Backtrack template. bt(grid, 0). End condition: row==len(grid). diag_l[row+col], diag_r[col-row+n-1], grid[row][col]='Q';bt();grid[row][col]='.'. Time: O(N!), Space: O(N!)",
+    },
+    "75": {
+        name: "75. Sort Colors",
+        tags: ["array", "two_pointers"],
+        keywords: ["dutch national flag", "lv_1"],
+        url: "/leetcode/75-sort-colors",
+        notes: "Two pointers, T: O(N), S: O(1)",
+        templates: ["two_pointers"],
     },
     "76": {
         name: "76. Minimum Window Substring",
         url: "/leetcode/76-minimum-window-substring",
         tags: ["sliding_window", "string"],
         keywords: ["minimum window", "lv_2"],
-        template: ["sliding_window"],
+        templates: ["sliding_window"],
         notes: "Sliding window template. while increase right, while shrink left. Time: O(S+T), Space: O(|S|)",
     },
     "77": {
@@ -140,7 +148,7 @@ var problems = {
         url: "/leetcode/77-combinations",
         tags: ["backtrack"],
         keywords: ["combinations", "lv_1"],
-        template: ["backtrack"],
+        templates: ["backtrack"],
         notes: "Backtrack template. Use 'start' to filter previous items, check len(path) == len(nums) to add to result",
     },
     "78": {
@@ -148,7 +156,7 @@ var problems = {
         url: "/leetcode/78-subsets",
         tags: ["backtrack", "array"],
         keywords: ["subsets", "lv_1"],
-        template: ["backtrack"],
+        templates: ["backtrack"],
         notes: "Backtrack template. Use 'start' to filter, add 'track' to result",
     },
     "81": {
@@ -156,7 +164,7 @@ var problems = {
         url: "/leetcode/81-search-in-rotated-sorted-array-ii",
         tags: ["binary_search", "array"],
         keywords: ["search 1 item", "rotated sorted array", "lv_1"],
-        template: ["binary_search"],
+        templates: ["binary_search"],
         notes: "Binary search, one item, split",
     },
     "92": {
@@ -164,7 +172,7 @@ var problems = {
         url: "/leetcode/92-reverse-linked-list-ii",
         tags: ["linked_list"],
         keywords: ["reverse", "lv_2"],
-        template: ["linked_list"],
+        templates: ["linked_list"],
         notes: "Recursive find the first position, reverse N node. T:O(N), S:O(1)",
     },
     "98": {
@@ -172,7 +180,7 @@ var problems = {
         url: "/leetcode/98-validate-binary-search-tree",
         tags: ["tree"],
         keywords: ["preorder", "lv_2"],
-        template: ["tree"],
+        templates: ["tree"],
         notes: "Tree traverse template. Preorder, valid (root, low, high), then recursion (left, low, root) && (right, root, high)",
     },
     "100": {
@@ -180,7 +188,7 @@ var problems = {
         url: "/leetcode/100-same-tree",
         tags: ["tree"],
         keywords: ["preorder", "lv_2"],
-        template: ["tree"],
+        templates: ["tree"],
         notes: "Tree traverse template. Preorder, check both null, 1 null, compare 2 values.",
     },
     "111": {
@@ -188,7 +196,7 @@ var problems = {
         url: "/leetcode/111-minimum-depth-of-binary-tree",
         tags: ["bfs", "tree"],
         keywords: ["tree depth", "lv_2"],
-        template: ["bfs"],
+        templates: ["bfs"],
         notes: "BFS template. deque. level traverse. range(len(que)), add children to next level.",
     },
     "141": {
@@ -196,7 +204,7 @@ var problems = {
         url: "/leetcode/141-linked-list-cycle",
         tags: ["fast_slow_pointers", "linked_list"],
         keywords: ["cycle list", "lv_2"],
-        template: ["fast_slow_pointers"],
+        templates: ["fast_slow_pointers"],
         notes: "Fast/Slow pointers, T:O(N), S:O(1)",
     },
     "142": {
@@ -204,7 +212,7 @@ var problems = {
         url: "/leetcode/142-linked-list-cycle-ii",
         tags: ["fast_slow_pointers", "linked_list"],
         keywords: ["cycle list", "lv_3"],
-        template: ["fast_slow_pointers"],
+        templates: ["fast_slow_pointers"],
         notes: "Fast/Slow pointers, 先找到meetpoint，再从头同步前进直到相遇。T:O(N), S:O(1)",
     },
     "146": {
@@ -212,7 +220,7 @@ var problems = {
         url: "/leetcode/146-lru-cache",
         tags: ["hashmap", "linked_list"],
         keywords: ["LRU", "double_linked_list", "lv_1"],
-        template: [],
+        templates: [],
         notes: "OrderedDict, both get()/put(): move_to_end(). raw code, use head/tail dummy nodes; cache{key:Node}.",
     },
     "167": {
@@ -230,7 +238,6 @@ var problems = {
         keywords: ["two sum", "lv_3"],
         url: "/leetcode/170-two-sum-iii-data-structure-design",
         notes: "hashmap, T: O(N), S: O(N)",
-        templates: [],
         companies: ["bloomberg", "amazon"],
     },
     "222": {
@@ -238,7 +245,7 @@ var problems = {
         url: "/leetcode/222-count-complete-tree-nodes",
         tags: ["tree"],
         keywords: ["BST", "count", "lv_3"],
-        template: ["tree"],
+        templates: ["tree"],
         notes: "Tree template. Time: O(lgN*lgN), only 1 side recursive",
     },
     "224": {
@@ -246,7 +253,7 @@ var problems = {
         url: "/leetcode/224-basic-calculator",
         tags: ["string", "queue_stack"],
         keywords: ["stack", "lv_2"],
-        template: ["queue_stack"],
+        templates: ["queue_stack"],
         notes: "Using stack, divide into sub-problems",
     },
     "234": {
@@ -254,7 +261,7 @@ var problems = {
         url: "/leetcode/234-palindrome-linked-list",
         tags: ["linked_list"],
         keywords: ["palindrome", "lv_2"],
-        template: ["linked_list"],
+        templates: ["linked_list"],
         notes: "Find the middle node, reverse the 2nd half to compare with 1st half, reverse it back at the end. T:O(N), S:O(1)",
     },
     "236": {
@@ -262,7 +269,7 @@ var problems = {
         url: "/leetcode/236-lowest-common-ancestor-of-a-binary-tree",
         tags: ["tree"],
         keywords: ["tree", "common ancestor", "lv_2"],
-        template: ["tree"],
+        templates: ["tree"],
         notes: "Tree template. check left and right",
     },
     "239": {
@@ -270,7 +277,7 @@ var problems = {
         url: "/leetcode/239-sliding-window-maximum",
         tags: ["array", "queue_stack"],
         keywords: ["mono queue", "lv_2"],
-        template: ["queue_stack"],
+        templates: ["queue_stack"],
         notes: "Mono queue template, pop(i - k + 1)",
     },
     "297": {
@@ -278,7 +285,7 @@ var problems = {
         url: "/leetcode/297-serialize-and-deserialize-binary-tree",
         tags: ["tree"],
         keywords: ["tree", "serialize", "lv_1"],
-        template: ["tree"],
+        templates: ["tree"],
         notes: "Tree template. Preorder, must have separator and null char. Post-order is harder, inorder impossible",
     },
     "322": {
@@ -286,7 +293,7 @@ var problems = {
         url: "/leetcode/322-coin-change",
         tags: ["dp"],
         keywords: ["coin change", "lv_3"],
-        template: ["dp"],
+        templates: ["dp"],
         notes: "topdown: res = min(res,sub_res+1), bottomUp: dp[i]=min(dp[i],dp[i-coin]+1). Time: O(amount*N), Space: O(amount)",
     },
     "438": {
@@ -294,7 +301,7 @@ var problems = {
         url: "/leetcode/438-find-all-anagrams-in-a-string",
         tags: ["sliding_window", "string"],
         keywords: ["minimum window", "lv_3"],
-        template: ["sliding_window"],
+        templates: ["sliding_window"],
         notes: "Sliding window template. Time: O(S+T), Space: O(|S|)",
     },
     "450": {
@@ -302,7 +309,7 @@ var problems = {
         url: "/leetcode/450-delete-node-in-a-bst",
         tags: ["tree"],
         keywords: ["BST", "lv_3"],
-        template: ["tree"],
+        templates: ["tree"],
         notes: "Tree template delete.",
     },
     "460": {
@@ -310,7 +317,7 @@ var problems = {
         url: "/leetcode/460-lfu-cache",
         tags: ["hashmap", "linked_list"],
         keywords: ["LFU", "double_linked_list", "lv_1"],
-        template: [],
+        templates: [],
         notes: "1 hashamp {key:Node}, 1 hashmap defaultdict(OrderedDict/DlinkedList) {freq:key_list}, min_freq",
     },
     "496": {
@@ -318,7 +325,7 @@ var problems = {
         url: "/leetcode/496-next-greater-element-i",
         tags: ["array", "queue_stack"],
         keywords: ["mono stack", "lv_3"],
-        template: ["queue_stack"],
+        templates: ["queue_stack"],
         notes: "Mono stack template, loop from end, use map for result",
     },
     "503": {
@@ -326,7 +333,7 @@ var problems = {
         url: "/leetcode/503-next-greater-element-ii",
         tags: ["array", "queue_stack"],
         keywords: ["mono stack", "circular array", "lv_3"],
-        template: ["queue_stack"],
+        templates: ["queue_stack"],
         notes: "Mono stack template, loop from end, array length 2*n-1",
     },
     "560": {
@@ -341,7 +348,7 @@ var problems = {
         url: "/leetcode/701-insert-into-a-binary-search-tree",
         tags: ["tree"],
         keywords: ["BST", "lv_3"],
-        template: ["tree"],
+        templates: ["tree"],
         notes: "Tree traverse template.",
     },
     "704": {
@@ -349,7 +356,7 @@ var problems = {
         url: "/leetcode/704-binary-search",
         tags: ["binary_search", "tree"],
         keywords: ["search 1 item", "lv_1"],
-        template: ["binary_search"],
+        templates: ["binary_search"],
         notes: "Simplest binary search, one item, l<=r",
     },
     "739": {
@@ -357,7 +364,7 @@ var problems = {
         url: "/leetcode/739-daily-temperatures",
         tags: ["array", "queue_stack"],
         keywords: ["mono stack", "temperature", "lv_3"],
-        template: ["queue_stack"],
+        templates: ["queue_stack"],
         notes: "Mono stack template, loop from end, store index",
     },
     "752": {
@@ -365,7 +372,7 @@ var problems = {
         url: "/leetcode/752-open-the-lock",
         tags: ["bfs",],
         keywords: ["lock", "lv_3"],
-        template: ["bfs"],
+        templates: ["bfs"],
         notes: "BFS template. deque. level traverse. range(len(que)), add children to next level.",
     },
     "773": {
@@ -373,7 +380,7 @@ var problems = {
         url: "/leetcode/773-sliding-puzzle",
         tags: ["bfs",],
         keywords: ["game", "lv_3"],
-        template: ["bfs"],
+        templates: ["bfs"],
         notes: "BFS template. ",
     },
     "969": {
