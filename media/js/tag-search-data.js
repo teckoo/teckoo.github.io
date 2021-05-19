@@ -383,6 +383,14 @@ var problems = {
         templates: ["bfs"],
         notes: "BFS template. ",
     },
+    "912": {
+        name: "912. Sort an Array",
+        url: "/leetcode/912-sort-an-array",
+        tags: ["sort", "array"],
+        keywords: ["quick_sort", "merge_sort", "lv_1"],
+        templates: ["quick_sort", "merge_sort"],
+        notes: "Sort templates: quick sort, merge sort",
+    },
     "969": {
         name: "969. Pancake Sorting",
         tags: ["array",],
