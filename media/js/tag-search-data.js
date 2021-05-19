@@ -151,6 +151,14 @@ var problems = {
         template: ["backtrack"],
         notes: "Backtrack template. Use 'start' to filter, add 'track' to result",
     },
+    "81": {
+        name: "81. Search in Rotated Sorted Array II",
+        url: "/leetcode/81-search-in-rotated-sorted-array-ii",
+        tags: ["binary_search", "array"],
+        keywords: ["search 1 item", "rotated sorted array", "lv_1"],
+        template: ["binary_search"],
+        notes: "Binary search, one item, split",
+    },
     "92": {
         name: "92. Reverse Linked List II",
         url: "/leetcode/92-reverse-linked-list-ii",
