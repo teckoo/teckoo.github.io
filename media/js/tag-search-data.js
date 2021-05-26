@@ -255,6 +255,13 @@ var problems = {
         notes: "hashmap, T: O(N), S: O(N)",
         companies: ["bloomberg", "amazon"],
     },
+    "200": {
+        name: "200. Number of Islands",
+        url: "/leetcode/200-number-of-islands",
+        tags: ["array", "bfs", "dfs", "union_find"],
+        keywords: ["grid", "lv_1"],
+        notes: "BFS/DFS/Union Find",
+    },
     "222": {
         name: "222. Count Complete Tree Nodes",
         url: "/leetcode/222-count-complete-tree-nodes",
