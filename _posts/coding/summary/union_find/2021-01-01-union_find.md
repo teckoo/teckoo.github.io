@@ -32,6 +32,10 @@ class UnionFind:
 
         # merge if not the same root
         if root_x != root_y:
+            if self.size_of_set[root_x] > self.size_of_set[root_y]:
+                # make sure root_y is the bigger one
+                # merge smaller tree to the bigger one
+                root_x, root_y = root_y, root_x
             self.parent[root_x] = root_y
             self.num_of_set -= 1
             self.size_of_set[root_y] += self.size_of_set[root_x]
@@ -42,6 +46,9 @@ class UnionFind:
         while self.parent[root] != None:
             root = self.parent[root]
         # set all nodes to point to the same root
+        # this is called path compression. 
+        # It makes the tree height <=3 after some calls. 
+        # then find() will be O(1)
         while x != root:
             origin_parent = self.parent[x]
             self.parent[x] = root
