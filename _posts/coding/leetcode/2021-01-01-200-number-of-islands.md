@@ -4,7 +4,7 @@ title: "200. Number of Islands"
 categories: [leetcode]
 ---
 
-[Leetcode Link](https://leetcode.com/problems/number-of-islands/)
+[Leetcode Link](https://leetcode.com/problems/number-of-islands/) | [Union Find template](/template/union_find)
 
 Given an m x n 2D binary grid grid which represents a map of '1's (land) and '0's (water), return the number of islands.
 
@@ -99,29 +99,41 @@ def numIslands(self, grid):
   self.count = sum(grid[i][j] == '1' 
                     for i in range(rows) for j in range(cols))
   parent = list(range(rows * cols))  # set parent to itself
+  rank = [1] * (rows * cols)
 
   def find(x: int) -> int:
-    if parent[x] != x:
-      parent[x] = find(parent[x])
+    # This is called path compression. 
+    # every call to `find` will do path compression,
+    # eventuall it makes the tree height <= 3, then 
+    # makes this method to be O(1).
+    while parent[x] != x:
+      parent[x] = parent[parent[x]]
+      x = parent[x]
     return parent[x]
 
   def union(x, y):
     xroot, yroot = find(x), find(y)
     if xroot == yroot: return
-    # merge the smaller one into the bigger
+    # merge the smaller one into the bigger to make it balance
     if rank[xroot] < rank[yroot]:
+      # if xroot is smaller, switch x and y
       xroot, yroot = yroot, xroot
-    parent[yroot] = xroot  # xroot is the bigger one
 
+    parent[yroot] = xroot  # make the bigger one as new parent
+    rank[xroot] += rank[yroot]
     self.count -= 1 
   
-  for i in rnage(row):
+  # actual iteration
+  for i in range(row):
     for j in range(col):
       if grid[i][j] == '0': continue
       index = i * col + j
+
       if j < col - 1 and grid[i][j+1] == '1':
+        # merge the right
         union(index, index + 1)
       if i < row - 1 and grid[i+1][j] == '1':
+        # merge the below
         union(index, index + col)
 
   return self.count
