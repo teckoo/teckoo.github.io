@@ -314,7 +314,7 @@ var problems = {
         name: "307. Range Sum Query - Mutable",
         url: "/leetcode/307-range-sum-query-mutable",
         tags: ["segment_tree"],
-        keywords: ["array", "lv_1"],
+        keywords: ["array", "binary_search", "lv_1"],
         templates: ["segment_tree"],
         notes: "Segment Tree template. O(logN) ",
     },
