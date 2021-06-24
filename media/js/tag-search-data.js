@@ -310,6 +310,14 @@ var problems = {
         templates: ["tree"],
         notes: "Tree template. Preorder, must have separator and null char. Post-order is harder, inorder impossible",
     },
+    "307": {
+        name: "307. Range Sum Query - Mutable",
+        url: "/leetcode/307-range-sum-query-mutable",
+        tags: ["segment_tree"],
+        keywords: ["array", "lv_1"],
+        templates: ["segment_tree"],
+        notes: "Segment Tree template. O(logN) ",
+    },
     "322": {
         name: "322. coin change",
         url: "/leetcode/322-coin-change",
