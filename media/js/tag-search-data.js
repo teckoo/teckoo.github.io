@@ -47,6 +47,14 @@ var problems = {
         templates: [],
         companies: ["bloomberg", "amazon"],
     },
+    "2": {
+        name: "2. Add Two Numbers",
+        url: "/leetcode/2-add-two-numbers",
+        tags: ["linked_list"],
+        keywords: ["add numbers", "lv_1"],
+        templates: [],
+        notes: "Loop 2 linked lists, carry bit",
+    },
     "3": {
         name: "3. Longest Substring Without Repeating Characters",
         url: "/leetcode/3-longest-substring-without-repeating-characters",
