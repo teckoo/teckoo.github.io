@@ -272,7 +272,7 @@ var problems = {
     },
     "208": {
         name: "208. Implement Trie (Prefix Tree)",
-        url: "/leetcode/200-implement-trie-prefix-tree",
+        url: "/leetcode/208-implement-trie-prefix-tree",
         tags: ["array", "trie"],
         keywords: ["search", "insert", "lv_1"],
         notes: "Trie",
