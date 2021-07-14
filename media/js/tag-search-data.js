@@ -270,6 +270,13 @@ var problems = {
         keywords: ["grid", "lv_1"],
         notes: "BFS/DFS/Union Find",
     },
+    "208": {
+        name: "208. Implement Trie (Prefix Tree)",
+        url: "/leetcode/200-implement-trie-prefix-tree",
+        tags: ["array", "trie"],
+        keywords: ["search", "insert", "lv_1"],
+        notes: "Trie",
+    },
     "222": {
         name: "222. Count Complete Tree Nodes",
         url: "/leetcode/222-count-complete-tree-nodes",
