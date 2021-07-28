@@ -428,6 +428,14 @@ var problems = {
         templates: ["binary_search"],
         notes: "Simplest binary search, one item, l<=r",
     },
+    "706": {
+        name: "706. Design HashMap",
+        url: "/leetcode/706-design-hashmap",
+        tags: ["hashmap"],
+        keywords: ["lv_1"],
+        templates: [],
+        notes: "Use array or bucket for internal storage",
+    },
     "739": {
         name: "739. Daily Temperatures",
         url: "/leetcode/739-daily-temperatures",
