@@ -246,6 +246,14 @@ var problems = {
         templates: [],
         notes: "OrderedDict, both get()/put(): move_to_end(). raw code, use head/tail dummy nodes; cache{key:Node}.",
     },
+    "155": {
+        name: "155. Min Stack",
+        url: "/leetcode/155-min-stack",
+        tags: ["stack"],
+        keywords: ["Min stack", "lv_1"],
+        templates: [],
+        notes: "OrderedDict, both get()/put(): move_to_end(). raw code, use head/tail dummy nodes; cache{key:Node}.",
+    },
     "167": {
         name: "167. Two Sum II - Input array is sorted",
         tags: ["array", "two_pointers"],
