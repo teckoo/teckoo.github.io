@@ -87,13 +87,21 @@ var problems = {
         templates: ["merge_sort"],
         notes: "Use dummy head",
     },
-     "22": {
+    "22": {
         name: "22. Generate Parentheses",
         url: "/leetcode/22-generate-parentheses",
         tags: ["backtrack", "array"],
         keywords: ["parentheses", "lv_3"],
         templates: ["backtrack"],
         notes: "Backtrack template. convert to validate the combinations of (). ",
+    },
+    "23": {
+        name: "23. Merge k Sorted Lists",
+        url: "/leetcode/23-merge-k-sorted-lists",
+        tags: ["linked_list", "heap"],
+        keywords: ["merge lists", "lv_1"],
+        templates: [],
+        notes: "Heap, add heads of lists into a heap, O(NlogK)",
     },
     "25": {
         name: "25. Reverse Nodes in k-Group",
