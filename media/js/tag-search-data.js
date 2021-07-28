@@ -250,9 +250,9 @@ var problems = {
         name: "155. Min Stack",
         url: "/leetcode/155-min-stack",
         tags: ["stack"],
-        keywords: ["Min stack", "lv_1"],
+        keywords: ["min stack", "lv_1"],
         templates: [],
-        notes: "OrderedDict, both get()/put(): move_to_end(). raw code, use head/tail dummy nodes; cache{key:Node}.",
+        notes: "One stack with (val, min) pairs, or two stacks with a min tracker.",
     },
     "167": {
         name: "167. Two Sum II - Input array is sorted",
@@ -332,6 +332,14 @@ var problems = {
         keywords: ["tree", "serialize", "lv_1"],
         templates: ["tree"],
         notes: "Tree template. Preorder, must have separator and null char. Post-order is harder, inorder impossible",
+    },
+    "300": {
+        name: "300. Longest Increasing Subsequence",
+        url: "/leetcode/300-longest-increasing-subsequence",
+        tags: ["stack"],
+        keywords: ["mono stack", "lv_1"],
+        templates: [],
+        notes: "LIS, use bisect on the mono stack. O(NlogN).",
     },
     "307": {
         name: "307. Range Sum Query - Mutable",
