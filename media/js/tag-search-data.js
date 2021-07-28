@@ -249,7 +249,7 @@ var problems = {
     "155": {
         name: "155. Min Stack",
         url: "/leetcode/155-min-stack",
-        tags: ["stack"],
+        tags: ["queue_stack"],
         keywords: ["min stack", "lv_1"],
         templates: [],
         notes: "One stack with (val, min) pairs, or two stacks with a min tracker.",
@@ -336,7 +336,7 @@ var problems = {
     "300": {
         name: "300. Longest Increasing Subsequence",
         url: "/leetcode/300-longest-increasing-subsequence",
-        tags: ["stack"],
+        tags: ["queue_stack"],
         keywords: ["mono stack", "lv_1"],
         templates: [],
         notes: "LIS, use bisect on the mono stack. O(NlogN).",
