@@ -230,6 +230,14 @@ var problems = {
         templates: ["bfs"],
         notes: "BFS template. deque. level traverse. range(len(que)), add children to next level.",
     },
+    "133": {
+        name: "133. Clone Graph",
+        url: "/leetcode/133-clone-graph",
+        tags: ["graph"],
+        keywords: ["dfs", "bfs", "lv_1"],
+        templates: [],
+        notes: "DFS/BFS go through neighbors, using visited {}",
+    },
     "141": {
         name: "141. Linked List Cycle",
         url: "/leetcode/141-linked-list-cycle",
