@@ -81,8 +81,8 @@ class NumArray(object):
       root.left = build_tree(l, mid)
       root.right = build_tree(mid + 1, r)
       root.total = root.left.total + root.right.total
-
       return root
+
     self.root = build_tree(nums, 0, len(nums) - 1)
 
   def update(self, i, val):
@@ -100,17 +100,18 @@ class NumArray(object):
       
       root.total = root.left.total + root.right.total
       return root.total
-    
-    def sumRange(self, i, j):
-      def sum_range(root, i, j):
-        if root.start == i and root.end == j:
-          return root.total
-        mid = (root.left + root.right) // 2
-        if j <= mid:
-          return sum_range(root.left, i, j)
-        elif i > mid:
-          return sum_range(root.right, i, j)
-        else:
-          return sum_range(root.left, i, mid) + sum_range(root.right, mid + 1, j)
-      return sum_range(self.root, i, j)
+    return update_val(self.root, i, val)
+
+  def sumRange(self, i, j):
+    def sum_range(root, i, j):
+      if root.start == i and root.end == j:
+        return root.total
+      mid = (root.left + root.right) // 2
+      if j <= mid:
+        return sum_range(root.left, i, j)
+      elif i > mid:
+        return sum_range(root.right, i, j)
+      else:
+        return sum_range(root.left, i, mid) + sum_range(root.right, mid + 1, j)
+    return sum_range(self.root, i, j)
 ```
