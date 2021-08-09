@@ -152,11 +152,18 @@ var problems = {
         notes: "Backtrack template. bt(grid, 0). End condition: row==len(grid). diag_l[row+col], diag_r[col-row+n-1], grid[row][col]='Q';bt();grid[row][col]='.'. Time: O(N!), Space: O(N!)",
     },
     "53": {
-        name: "53. maximum-subarray",
+        name: "53. Maximum Subarray",
         tags: ["array", "prefix_sum"],
         keywords: ["subarray", "sum", "lv_1"],
         url: "/leetcode/53-maximum-subarray",
         notes: "Kadane's algorithm. Or get prefix sum for array, convert to buy/sell stock problem",
+    },
+    "56": {
+        name: "56. Merge Intervals",
+        tags: ["array", "line_sweep"],
+        keywords: ["intervals", "lv_1"],
+        url: "/leetcode/56-merge-intervals",
+        notes: "Merge interval template, sort first.",
     },
     "75": {
         name: "75. Sort Colors",
