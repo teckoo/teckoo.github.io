@@ -301,6 +301,13 @@ var problems = {
         keywords: ["grid", "lv_1"],
         notes: "BFS/DFS/Union Find",
     },
+    "207": {
+        name: "207. Course Schedule",
+        url: "/leetcode/207-course-schedule",
+        tags: ["array", "topo_sort"],
+        keywords: ["search", "graph", "lv_1"],
+        notes: "Template topo sort",
+    },
     "208": {
         name: "208. Implement Trie (Prefix Tree)",
         url: "/leetcode/208-implement-trie-prefix-tree",
