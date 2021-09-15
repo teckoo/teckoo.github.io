@@ -355,6 +355,14 @@ var problems = {
         templates: ["queue_stack"],
         notes: "Mono queue template, pop(i - k + 1)",
     },
+    "268": {
+        name: "268. Missing Number",
+        url: "/leetcode/268-missing-number",
+        tags: ["bit"],
+        keywords: ["lv_1"],
+        templates: [],
+        notes: "XOR all numbers with 0 to N-1",
+    },
     "297": {
         name: "297. Serialize and Deserialize Binary Tree",
         url: "/leetcode/297-serialize-and-deserialize-binary-tree",
