@@ -52,4 +52,6 @@ def missingNumber(self, nums):
 
 If asked for any other solution, we can mention `Hashset`, and point out the space complexity takes O(N).
 
-Note: I really met this problem in an interview. No need to coding, but discussed all three solutions for their pros and cons.
+# Notes
+
+I really met this problem in an interview. No need to coding, but discussed all three solutions for their pros and cons.
