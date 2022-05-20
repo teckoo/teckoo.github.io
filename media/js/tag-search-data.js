@@ -213,6 +213,14 @@ var problems = {
         templates: ["linked_list"],
         notes: "Recursive find the first position, reverse N node. T:O(N), S:O(1)",
     },
+    "94": {
+        name: "94. Binary Tree Inorder Traversal",
+        url: "/leetcode/94-binary-tree-inorder-traversal",
+        tags: ["tree"],
+        keywords: ["traversal", "lv_1"],
+        templates: ["tree"],
+        notes: "Basic tree recursive and stack traversal. T:O(N), S:O(N)",
+    },
     "98": {
         name: "98. Validate binary search tree",
         url: "/leetcode/98-validate-binary-search-tree",
